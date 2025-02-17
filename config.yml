@@ -1,35 +1,32 @@
 baseURL: "/"
-title: PATOS
+title: Cloudlabs WIP
 theme: hugo-theme-ladder
 license: MIT
 licenselink: ""
-description: "O primeiro grupo focado em Software Livre da UFSCar" # provavelmente para SEO
-homepage: "https://patos.dev/"
+description: "" # provavelmente para SEO
+homepage: "https://blog.cloudlabs.ufscar.br/"
 defaultContentLanguage: "pt-br"
 googleAnalytics: ""
 pagination:
   size: 10
 hasCJKLanguage: false
-copyright: "© 2025 PATOS"
+copyright: "© 2025 Cloudlabs"
 menu:
   main:
-    - name: Blog
-      url: /blog
+    - name: Red Team
+      url: /red-team
       weight: 1
-    - name: Aulões
-      url: /auloes
-      weight: 2
-    - name: Calendário
-      url: /calendar
-      weight: 3
-    - name: Listas
-      url: /series
-      weight: 4
+    # - name: Calendário
+    #   url: /calendar
+    #   weight: 3
+    # - name: Listas
+    #   url: /series
+    #   weight: 4
 
 params:
   brand: HOME
   avatarURL: /images/avatar.png
-  author: PATOS UFSCar
+  author: Cloudlabs UFSCar
   authorDescription: Pretty Awesome To Open Source
   info: |
     PATOS é o primeiro grupo focado em open source e software livre da UFSCar.
