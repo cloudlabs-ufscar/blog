@@ -3,7 +3,7 @@ title: Cloudlabs WIP
 theme: hugo-theme-ladder
 license: MIT
 licenselink: ""
-description: "" # provavelmente para SEO
+description: "Pesquisa e desenvolvimento em tecnologias para data centers utilizando virtualização" # provavelmente para SEO
 homepage: "https://blog.cloudlabs.ufscar.br/"
 defaultContentLanguage: "pt-br"
 googleAnalytics: ""
@@ -29,11 +29,7 @@ params:
   author: Cloudlabs UFSCar
   authorDescription: Pretty Awesome To Open Source
   info: |
-    PATOS é o primeiro grupo focado em open source e software livre da UFSCar.
-    Interessado? Se [inscreva em nosso Psel](https://github.com/patos-ufscar/psel/tree/main).
-
-    [Inscrição em Flash Talks](https://forms.gle/HEB5maXQ8uXsdcT96).
-    [privacy policy](https://patos.dev/policy)
+    CloudLabs é um grupo de pesquisa do Departamento de Computação da Universidade Federal de São Carlos (UFSCar), criado e financiado a partir de uma parceiria com o LuizaLabs, com o objetivo de investigar o cenário de tecnologias para data centers. Nossa meta é analisar, estudar e experimentar o uso de ferramentas associadas a cloud focalizando a aplicação de virtualização em cinco áreas essenciais: storage, SRE (Site Reliability Engineering), network, infraestrutura e load balancing.CloudLabs tem a honra de contar com o LuizaLabs como colaborador técnico, uma parceria que enriquece nosso ambiente de pesquisa com insights práticos e experiência do setor. Juntos, exploramos novas fronteiras, aplicando nossa pesquisa em um contexto real e contribuindo para a evolução contínua de tecnologias de data centers.
 
   favicon: /images/winframe.png
   options:
