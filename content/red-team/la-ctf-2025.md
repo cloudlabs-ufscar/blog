@@ -1,12 +1,12 @@
-+++
-date = 2025-02-17T18:13:47+01:00
-draft = false
-title = "LA-CTF-2025"
-description = "Writeups para alguns desafios de pwning."
-tags = ['CTF', 'Cibersegurança']
-categories = []
-featured = true
-+++
+{
+"date": "2025-02-17T02:17:31-03:00",
+"draft" : false
+"title" : "LA-CTF-2025"
+"description" : "Writeups para alguns desafios de pwning."
+"tags" : ['CTF', 'Cibersegurança']
+"categories" : []
+"featured" : true
+}
 
 # Introdução
 O Epic Leet Team jogou o LA-CTF que ocorreu no final de semana do dia 08 até 09 de fevereiro.  Os challenges de pwning foram resolvidos pelo professor orientador da frente de red team do projeto (com ocasionais ajudas de outros membros), e eu (Vini) embora com menos experiência, acompanhei a resolução dos desafios.
