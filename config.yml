@@ -1,5 +1,5 @@
 baseURL: "/"
-title: Cloudlabs WIP
+title: Cloudlabs
 theme: hugo-theme-ladder
 license: MIT
 licenselink: ""
@@ -16,12 +16,6 @@ menu:
     - name: Red Team
       url: /red-team
       weight: 1
-    # - name: Calendário
-    #   url: /calendar
-    #   weight: 3
-    # - name: Listas
-    #   url: /series
-    #   weight: 4
 
 params:
   brand: HOME
