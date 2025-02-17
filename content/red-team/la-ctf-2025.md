@@ -1,8 +1,8 @@
 +++
 date = 2025-02-17T02:17:31-03:00
 draft = false
-title = "LA-CTF-2025"
-description = "Writeups para alguns desafios de pwning."
+title = "LA CTF 2025"
+description = "Writeups os desafios de pwning do LA CTF 2025."
 tags = ['CTF', 'Cibersegurança']
 categories = []
 featured = true
