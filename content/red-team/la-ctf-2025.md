@@ -12,7 +12,7 @@ featured = true
 O Epic Leet Team jogou o LA-CTF que ocorreu no final de semana do dia 08 até 09 de fevereiro.  Os challenges de pwning foram resolvidos pelo professor orientador da frente de red team do projeto (com ocasionais ajudas de outros membros), e eu (Vini) embora com menos experiência, acompanhei a resolução dos desafios.
 
 # PWN
-## 2password
+## pwn/2password
 
 O código do challenge a seguir, inicialmente procuramos algo como um stack buffer overflow mas após algum tempo observando o código, encontramos a vulnerabilidade de format string. Apesar do binário possuir algumas mitigações, como PIE e Partial RELRO, nenhuma dessas impede a vulnerabilidade de ser explorada.
 
@@ -128,7 +128,7 @@ b'%13p%14p%15p%16p%17p%18p%19p%20p%21p%22p'
 007d38367a783063 b'c0xz68}\x00'
 ```
 
-## state-change
+## pwn/state-change
 Neste challenge temos uma variável global que precisa ser sobrescrita de alguma maneira. Além disso, precisamos de alguma maneira redirecionar o ponteiro de instrução para a função win(), pois no fluxo normal de execução do programa ela não é chamada.
 
 ``` chall.c
@@ -251,7 +251,7 @@ $
 [*] Got EOF while sending in interactive
 ```
 
-## gamedev
+## pwn/gamedev
 Esse desafio consiste em Heap Overflow. Vamos lá:
 - Heap Overflow no '*edit_level*'.
 - O programa fornece um '*infoleak*' (vaza o endereço da '*main()*' no começo da execução).\
@@ -401,7 +401,7 @@ Choice: $ cat flag.txt
     b'lactf{ro9u3_LIk3_No7_R34LlY_RO9U3_H34P_LIK3_nO7_r34llY_H34P}\n'
 lactf{ro9u3_LIk3_No7_R34LlY_RO9U3_H34P_LIK3_nO7_r34llY_H34P
 ```
-## minceraft (não terminado)
+## pwn/minceraft (não terminado)
 
 Mais um challenge que possui '*ASLR*' e precisamos de um '*infoleak*'.
 - Não encontramos nenhum gadget útil para ROP.
