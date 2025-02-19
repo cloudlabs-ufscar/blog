@@ -1,15 +1,16 @@
 +++
 date = 2025-02-17T02:17:31-03:00
+lastmod = 2025-02-18T18:40:04-03:00
 draft = false
 title = "LA CTF 2025"
-description = "Writeups os desafios de pwning do LA CTF 2025."
+description = "Writeups dos desafios do LA CTF 2025."
 tags = ['CTF', 'Cibersegurança']
 categories = []
 featured = true
 +++
 
 # Introdução
-O Epic Leet Team jogou o LA-CTF que ocorreu no final de semana do dia 08 até 09 de fevereiro.  Os challenges de pwning foram resolvidos pelo professor orientador da frente de red team do projeto (com ocasionais ajudas de outros membros), e eu (Vini) embora com menos experiência, acompanhei a resolução dos desafios.
+O Epic Leet Team jogou o LA-CTF que ocorreu no final de semana do dia 08 até 09 de fevereiro.  Os challenges de pwning foram resolvidos pelo professor orientador da frente de red team do projeto (com ocasionais ajudas de outros membros), e eu (Vini) embora com menos experiência, acompanhei a resolução dos desafios. Os challenges de crypto foram resolvidos pelo professor orientador, membros do ELT e a Laura, que no primeiro CTF dela resolveu um desafio e acompanhou as outras resoluções.
 
 # PWN
 ## pwn/2password
@@ -475,3 +476,52 @@ send_payload(
 
 p.interactive()
 ```
+
+# Crypto
+
+Laura aqui! 
+
+## crypto/too-loud-to-yap
+
+Esse foi o primeiro desafio que eu resolvi num CTF, que pode ser resolvido coma ajuda uma ferramenta online para fazer a decifração automática, eu usei o [CyberChef](https://gchq.github.io/CyberChef/#recipe=Vigen%C3%A8re_Decode('')). Aqui a descrição do problema:
+> AAAAA
+>i love AAAAA telling and posting stories! you could AAAAA say its something of a heritage for me :3
+>unfortunately, when i AAAAA tried telling this story about "autos", some guy kept YELLING "AAAAA" in the background which AAAAA kept messing up my new take on the vigenere cipher! he actually started yelling right AAAAA when i started my story :( weh...
+
+E aqui o texto cifrado com a flag:
+>LACTF
+>Here’s HERES a thing THING that htwpxues is brh ht al jfnqlij. Q anv lparw. THERE
+>Basicbldg, ye hppa awpbmjg oyea zks ovwlastn, xwlvsgg llwhz spaymzwzk fliaozklraf. O elafs ba pnn bh ko zbhk o iwope MOVIEA.
+>Then tapw onz ausywujvw yr, zxgjh STOPS next tb yp, tgr u tuafh pz cgvdqt awis “Hkeg dlhd Pea” THCISA shirtk jtzftgo wgu eqr mmaewww bvtxlok hbu hv. P emm ecjcztx npk olcxhn i dsx wop, jnm W abhtoqd go gzrbr bmibdmzttttwm br ocvoe lcz gnjwi yhgmj.
+>N sjsmbwk "OUTED lactf{ooyg_blhd_pea_ubu}!"
+>Ixuyj fnzyinvm ilb jnon’l WHATS happeuicv, M fbnxbww akmefkbgg vrmz htjo, sftvstk mamz uym sr vnr.
+>Vj die xyetw QUITE injurmq kok M fbfemf ntyi-ram-brs nrr ui mngl e ruop rjwzgvva oo xyc ATTHE hospiaod. X ets qqje, onbu sjtr h qhe mn os tfz ffak faly itagftd nr.
+
+De início já temos duas informações importantes:
+- A [cifra de Vigenère](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher) foi usada em algum lugar
+- Vão aparecer alguns "AAAAA" perdidos no meio do texto cifrado
+
+Depois de observar o texto cifrado fica claro onde estão os "AAAAA"s, inclusive a maioria deles estão cifrados para palavras comuns do inglês. Isso na verdade demontra uma característica da cifra de Vigenère, que **quando a letra cifradora/cifrada é um "a" na verdade esse caractere permanece na sua forma original**, ainda decodificado. Dessa forma, no lugar de cada "AAAAA" temos a chave usada na cifração.
+
+Observando o texto cifrado é claro que cada palavra tem uma chave diferente, e pela segunda linha é fácil de deduzir que a palavra anterior no texto original é a chave de cada palavra. Bom, esse foi o meu primeiro chute...
+
+>Here’s **HERES** a thing **THING** that htwpxues is brh ht al jfnqlij. Q anv lparw. **THERE**
+
+Se você tentar decifrar "lparw" para conseguir "there", a chave obtida vai ser "siwas", e até onde eu sei essa não é uma palavra em inglês. Então, a chave usada não é simplesmente a palavra anterior, até porque isso não indica o que acontece quando palavras em sequência não têm o mesmo tamanho nem como a primeira palavra foi cifrada.
+
+> **Basicbldg**, ye hppa awpbmjg oyea...
+
+Aí eu percebi que a primeira palavra do terceiro parágrafo era "Basicblgd" e só as últimas 4 letras realmente foram cifradas pelo "AAAAA" anterior. Eu deduzi que a palavra era "Basically", então a chave só poderia ser "AAAAABasi", BINGO! A partir disso, eu testei outras palavras para garantir que eu tinha entendido:
+
+- Na linha 2: 
+	- thing<--AAAAa--thing | Como o "a" só usou uma letra dos "AAAAA", o resto delas foi usado aqui com o "a"
+    - htwpxues<--Athathap--happened | Usa o "A" que sobrou de "THING", o "that" e as 3 primeiras letras dela "hap"
+- A primeira palavra:
+	- LACTF<--lactf--AAAAA | O escritor escolheu "LACTF" como a chave da primeira palavra
+- Na linha da flag:
+	- OUTED<--outed--AAAAA | Esse "AAAAA" permite que a flag seja obtida sem decifrar o resto do texto
+	- lactf<--AAAAA--lactf | O início da flag!
+	- ooyg<--lact--down | O "f" de "lactf" vai começar a chave da próxima palavra
+
+Seguindo essa lógica você vai conseguir:
+`lactf{down_with_cis_bus}`
