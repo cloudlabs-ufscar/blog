@@ -13,8 +13,8 @@ hasCJKLanguage: false
 copyright: "© 2025 DC UFSCar"
 menu:
   main:
-    - name: Red Team
-      url: /red-team
+    - name: Security
+      url: /sec
       weight: 1
 
 params:
