@@ -44,7 +44,7 @@ Uma **interface física de rede** é um hardware, como uma placa de rede (NIC), 
 Uma **interface virtual de rede** é uma interface criada por software que simula uma conexão de rede sem a necessidade de hardware físico. Ela é usada para comunicação entre máquinas virtuais, contêineres ou diferentes processos dentro de um sistema. 
 Exemplos incluem **veth (Virtual Ethernet)** para comunicação entre namespaces no Linux, **bridge interfaces** para conectar VMs a redes físicas, e **tun/tap interfaces**, que criam conexões de rede tuneladas. 
 
-## [Virtual Interfaces](# Virtual Networking Devices - TUN, TAP and VETH Pairs Explained)
+## Virtual Interfaces
 ### Tap/Tun
 [What is the TAP](https://vtun.sourceforge.net/tun/faq.html#1.2)
 ```
