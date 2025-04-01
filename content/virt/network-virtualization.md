@@ -197,10 +197,8 @@ sudo systemctl start dnsmasq.service
 sudo apt install cloud-utils
 
 # Generate cloud-init img
-cloud-localds --network-config=./config-data/network-config my-seed.img ./c
-onfig-data/user-data.yaml
-cloud-localds --network-config=./config-data/network-config my-seed2.img ./c
-onfig-data/user-data.yaml
+cloud-localds --network-config=./config-data/network-config my-seed.img ./config-data/user-data.yaml
+cloud-localds --network-config=./config-data/network-config my-seed2.img ./config-data/user-data.yaml
 
 # Start VMs
 # Create machine using e1000 driver
