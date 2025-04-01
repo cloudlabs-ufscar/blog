@@ -219,7 +219,7 @@ qemu-system-x86_64 \
 -cpu host \
 -enable-kvm \
 -drive if=virtio,format=qcow2,file=virtio.qcow2 \
--drive if=virtio,format=raw,file=my-seed2.img \
+-drive if=virtio,format=raw,file=my-seed.img \
 -m 2048 -smp 2 \
 -netdev tap,id=mynet1,ifname=tap1,script=no,downscript=no \
 -device virtio-net-pci,netdev=mynet1,mac=52:54:00:12:34:57 \
