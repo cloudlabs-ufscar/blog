@@ -16,6 +16,9 @@ menu:
     - name: Security
       url: /sec
       weight: 1
+    - name: Virtualization
+      url: /virt
+      weight: 2
 
 params:
   brand: HOME
