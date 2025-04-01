@@ -195,7 +195,6 @@ sudo systemctl start dnsmasq.service
 # Create cloud-init.yaml using cloud-init yaml
 # Install cloud-image-utils on arch or cloud-utils on apt-based
 sudo apt install cloud-utils
-cloud-localds --network-config=./config-data/network-config-dns my-seed2.img ./config-data/user-data.yaml
 
 # Generate cloud-init img
 cloud-localds --network-config=./config-data/network-config my-seed.img ./c
