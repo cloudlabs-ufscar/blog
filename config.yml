@@ -24,9 +24,9 @@ params:
   brand: HOME
   avatarURL: /images/avatar.png
   author: Cloudlabs UFSCar
-  authorDescription: Pesquisa e desenvolvimento em tecnologias para data centers utilizando virtualização. 
+  authorDescription: Pesquisa e desenvolvimento em tecnologias para data centers utilizando virtualização
   info: |
-     Grupo de pesquisa do Departamento de Computação, criado e financiado por uma parceiria com o LuizaLabs, com o objetivo de investigar e experimentar tecnologias para cloud.
+     Grupo de pesquisa em tecnologias para cloud do DC, criado e financiado por uma parceria com a Magalu Cloud.
 
   favicon: /images/winframe.png
   options:
