@@ -1,0 +1,38 @@
+{{ $runs := 16 }}
+module top();
+
+    reg [47:0] password;
+
+{{ range $i := seq 1 $runs }}
+    reg  [31:0] a{{ $i }};
+    reg  [31:0] b{{ $i }};
+    wire [31:0] c{{ $i }};
+
+    add _{{ $i }}_ (
+        .a(a{{ $i }}),
+        .b(b{{ $i }}),
+        .c(c{{ $i }}),
+        .password(password)
+    );
+{{ end}}
+
+    initial begin
+{{- range $i := seq 1 $runs }}
+        a{{ $i }} = {{ random.Number 0 0xffffffff }};
+        b{{ $i }} = {{ random.Number 0 0xffffffff }};
+{{- end}}
+        // if we do not set an initial value for password,
+        // the tool will find a value such that the
+        // cover statement below is SAT
+    end
+
+    always @(*) begin
+        cover (
+            c1 == (a1 + b1)
+            {{- range $i := seq 2 $runs }}
+            && c{{ $i }} == (a{{ $i }} + b{{ $i }})
+            {{- end}}
+        );
+    end
+
+endmodule

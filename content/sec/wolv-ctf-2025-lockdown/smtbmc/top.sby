@@ -1,0 +1,16 @@
+[options]
+mode cover
+depth 2
+
+[engines]
+smtbmc yices
+
+[script]
+read -formal synth.v
+read -formal top.v
+prep -top top
+
+[files]
+top.v
+synth.v
+structs.sv

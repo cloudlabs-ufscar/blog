@@ -4,7 +4,7 @@ lastmod = 2025-02-18T18:40:04-03:00
 draft = false
 title = "LA CTF 2025"
 description = "Writeups dos desafios do LA CTF 2025."
-tags = ['CTF', 'Cibersegurança']
+tags = ['CTF']
 categories = []
 featured = true
 +++

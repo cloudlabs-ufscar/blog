@@ -1,0 +1,385 @@
+{
+    "version": 4,
+    "library": "WOLVCTF_GATE_LIBRARY",
+    "gate_locations": {
+        "data_category": "generic",
+        "data_x_identifier": "X_COORDINATE",
+        "data_y_identifier": "Y_COORDINATE"
+    },
+    "cells": [
+        {
+            "name": "NAND",
+            "types": [
+                "combinational"
+            ],
+            "pin_groups": [
+                {
+                    "name": "A",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "A",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "B",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "Y",
+                    "direction": "output",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "Y",
+                            "direction": "output",
+                            "type": "none",
+                            "function": "(! (A & B))"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "XOR",
+            "types": [
+                "combinational"
+            ],
+            "pin_groups": [
+                {
+                    "name": "A",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "A",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "B",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "Y",
+                    "direction": "output",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "Y",
+                            "direction": "output",
+                            "type": "none",
+                            "function": "(A ^ B)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "XNOR",
+            "types": [
+                "combinational"
+            ],
+            "pin_groups": [
+                {
+                    "name": "A",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "A",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "B",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "Y",
+                    "direction": "output",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "Y",
+                            "direction": "output",
+                            "type": "none",
+                            "function": "(! (A ^ B))"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "NOR",
+            "types": [
+                "combinational"
+            ],
+            "pin_groups": [
+                {
+                    "name": "A",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "A",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "B",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "Y",
+                    "direction": "output",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "Y",
+                            "direction": "output",
+                            "type": "none",
+                            "function": "(! (A | B))"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "AND",
+            "types": [
+                "combinational"
+            ],
+            "pin_groups": [
+                {
+                    "name": "A",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "A",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "B",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "Y",
+                    "direction": "output",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "Y",
+                            "direction": "output",
+                            "type": "none",
+                            "function": "(A & B)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "OR",
+            "types": [
+                "combinational"
+            ],
+            "pin_groups": [
+                {
+                    "name": "A",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "A",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "B",
+                    "direction": "input",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "B",
+                            "direction": "input",
+                            "type": "none"
+                        }
+                    ]
+                },
+                {
+                    "name": "Y",
+                    "direction": "output",
+                    "type": "none",
+                    "ascending": true,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "Y",
+                            "direction": "output",
+                            "type": "none",
+                            "function": "(A | B)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "GND",
+            "types": [
+                "combinational",
+                "ground"
+            ],
+            "pin_groups": [
+                {
+                    "name": "O",
+                    "direction": "output",
+                    "type": "ground",
+                    "ascending": false,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "O",
+                            "direction": "output",
+                            "type": "ground",
+                            "function": "0b0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "VCC",
+            "types": [
+                "combinational",
+                "power"
+            ],
+            "pin_groups": [
+                {
+                    "name": "O",
+                    "direction": "output",
+                    "type": "power",
+                    "ascending": false,
+                    "start_index": 0,
+                    "ordered": false,
+                    "pins": [
+                        {
+                            "name": "O",
+                            "direction": "output",
+                            "type": "power",
+                            "function": "0b1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
