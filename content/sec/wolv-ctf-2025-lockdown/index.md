@@ -116,7 +116,7 @@ To validate the new hypothesis, we isolate other 1-bit full adders for visual in
 
 ![](shot/02.png)
 
-The isolated view above shows a full adder which only got lock logic in the direct path from inputs to outputs. We can clearly identify the carry block is implemented by the 3 NAND gates at the bottom. This is different from the Wikipedia diagram we have just shown. Fair enough, but if the synthesis tool considered it more optimal to implement the carry block with 3 NAND gates (instead of 2 AND gates and 1 OR gate), how come OR gates appear at other parts of the circuit?
+The isolated view above shows an 1-bit full adder which only got lock logic in the direct path from inputs to outputs. We can clearly identify the carry block is implemented by the 3 NAND gates at the bottom. This is different from the Wikipedia diagram we have just shown. Fair enough, but if the synthesis tool considered it more optimal to implement the carry block with 3 NAND gates (instead of 2 AND gates and 1 OR gate), how come OR gates appear at other parts of the circuit?
 
 Let's look for a part of the circuit which uses OR so we can get a sense of what is going on.
 
@@ -129,7 +129,7 @@ Very convoluted. Although it seems like it would be possible to analyze all poss
 
 ## Solving with SMT
 
-What if we could ask HAL to solve password bits as unknowns in an equation such that the adder provided in [synth.v](synth.v) gives the same result as an ordinary adder? That would work and we won't need to worry with the circuit structure.
+What if we could ask HAL to solve password bits as unknowns in an equation such that the adder provided in [synth.v](synth.v) gives the same result as an ordinary adder? That would work and we won't need to worry about the circuit structure.
 
 HAL even comes with an [example](https://github.com/emsec/hal/blob/39d1eaa532d42b178cf0b78acc58c522e2f7f1aa/examples/simple_alu/py/smt.py) on how to use a SMT solver to prove some circuit behaves as an adder. We use that example as a starting point.
 
@@ -194,9 +194,9 @@ For the [HAL example](https://github.com/emsec/hal/blob/39d1eaa532d42b178cf0b78a
 
 In other words, we need to solve ∀a,b, whereas the example solves ∃a,b.
 
-Now that was somewhat tricky. We searched HAL code base for something like `ForAll` and found nothing. The Z3 solver supports `ForAll`, but perhaps not every SMT solver supports it. HAL has some abstraction and allows to use Z3, Boolector or Bitwuzla as a SMT solver.
+Now that was somewhat tricky. We searched HAL code base for something like "for all" and found nothing. Z3 supports `ForAll`, but perhaps not every SMT solver supports it. HAL has some abstraction and allows to use Z3, Boolector or Bitwuzla as a SMT solver.
 
-The solution was a hack. We chose some a,b inputs at random and added an equation substituting each a,b pair as a new constraint. The more a,b pairs we added, the better we would approximate a `ForAll`.
+The solution was a hack. We chose some a,b inputs at random and added an equation substituting each a,b pair as a new constraint. The more a,b pairs we added, the better we would approximate a "for all".
 
 ```python
 import os
@@ -292,7 +292,7 @@ endmodule
 
 Then we need to write a testbench. We leave `password` with its initial value undefined, since it's an unknown, and use a `cover` statement so that the tool will solve for a condition where the adder produces the same output as `a + b`.
 
-Now we employ a similar trick we previously used with HAL. Since we cannot express a "for all" in Verilog (or maybe we can? I'm not experienced enough with formal verification in Verilog), we replicate the adder a few times, providing random inputs to each instance, and constraint that all of the instances must produce the same output as `a + b`.
+Now we employ a similar trick we previously used with HAL. Since we cannot express a "for all" in Verilog (or maybe we can? I'm not experienced enough with formal verification in Verilog), we replicate the adder a few times, providing random inputs to each instance, and check the output of all these instances in the `cover` statement.
 
 We can generate Verilog for this using the [gomplate](https://gomplate.ca) template language.
 
@@ -339,7 +339,7 @@ endmodule
 
 Please check this [blog's repository at GitHub](https://github.com/cloudlabs-ufscar/blog/tree/main/content/sec/wolv-ctf-2025-lockdown/smtbmc) for the complete auxiliary files needed to reproduce this solution.
 
-```
+```plain
 $ make
 gomplate -f "top.v.tmpl" -o "top.v"
 sby -f "top.sby"
