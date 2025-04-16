@@ -374,3 +374,5 @@ SBY  1:05:19 [top] summary:   reached cover statement top._witness_.check_cover_
 SBY  1:05:19 [top] DONE (PASS, rc=0)
 wctf{unL0cK}
 ```
+
+That's all, folks. As an ending remark, if you ever need to deploy cloud-based infrastructure in Brazil (Fortaleza or São Paulo), please consider our partner [Magalu Cloud](https://magalu.cloud).
