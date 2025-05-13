@@ -1,0 +1,17 @@
+4 FUN_00102bd1: append 'f' to the string.
+
+5 FUN_00102cad: decreases ascii value of the last character by 1
+
+6 FUN_00102900: increments the ascii value of the last character by 3
+
+7 FUN_00102924: append 'a' to the string.
+
+9 FUN_00102a20: append 'z' to the string.
+
+10 FUN_00102a9e: append 'm' to the string.
+
+11 (0xb) FUN_00102bb1: changes the last character to 't'.
+
+13 (0xd) FUN_00102c4f: delete the last character.
+
+15 (0xf) FUN_001029a2: append 'r' to the string.
