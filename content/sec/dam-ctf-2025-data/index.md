@@ -424,10 +424,11 @@ undefined8 FUN_00102db7(void)
   return 0;
 }
 ```
-They can move the pointer left and right. However, it seemed as if they were unreachable, as they weren't explicity called anywhere. This was the missing piece that stumped a lot of players, and it was a smart trick placed by the challenge developers using an exception handler. And it seems like most decompilers are fooled by this, leaving these function calls mostly obfuscated. During the challenge, we actually just figured this out by guessing, and eventually we found out that these functions are called by the commands 'l' and 'r'. Being able to move the pointer makes this easy, it's just a matter of playing the game and building the desired string.\
+They can move the pointer left and right. However, it seemed as if they were unreachable, as they weren't explicity called anywhere. This was the missing piece that stumped a lot of players, and it was a smart trick placed by the challenge developers using an exception handler. And it seems like most decompilers are fooled by this, leaving these function calls mostly obfuscated.\
+ During the challenge, we actually just figured this out by guessing, and eventually we found out that these functions are called by the commands 'l' and 'r'. Being able to move the pointer makes this easy, it's just a matter of playing the game and building the desired string.\
 Before we show the solution, let's dive a little deeper into these obfuscated function calls. Here is the original code, provided by the devs after the CTF ended:
 ```C
-std::string input_full, input_word, func = "0", args ="0", func_pass;
+    std::string input_full, input_word, func = "0", args ="0", func_pass;
 	int index = 0;
 		
 	std::cout << "> ";
@@ -450,7 +451,7 @@ std::string input_full, input_word, func = "0", args ="0", func_pass;
 		else {return false;}
 	}
 ```
-TODO: complete this explanation
+This code checks if stoi throws an error, and this will happen if `func` contains an invalid character. In this case, we want it to, when we type 'l' and 'r'. The decompilation doesn't clearly show the equivalent of the `catch (const std::invalid_argument & e)` block from the original code, decompilers often struggle with dealing with the high level logic of `try...catch` blocks. Which is why, in `FUN_00103956` we can see all the commands for numeric values, but not the two possible character based commands.
 
 I won't show the entire solution sequence we used here, you can check out the logs at our [github repo](https://github.com/cloudlabs-ufscar/blog/blob/main/content/sec/dam-ctf-2025-data/its_data_not_data/solution.txt), as well as all the other files for the challenges and the ones we used for solving them. In the end, after playing the game, we got the flag `dam{git_branch_origin._you_are_a_pulled_one}`.
 
