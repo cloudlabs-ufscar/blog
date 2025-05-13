@@ -1,6 +1,6 @@
 +++
 date = 2025-05-13T11:00:00-03:00
-draft = true
+draft = false
 title = "DamCTF 2025 — Is it data or data? & It's data, not data."
 description = "DamCTF 2025 — writeup for two related rev challenges"
 tags = ['CTF', 'reversing']
@@ -10,7 +10,7 @@ featured = true
   locale = "en"
 +++
 
-This past weekend (05/09-05/11), we participated in DamCTF 2025, organized by the Oregon State University Security Club. On this writeup, I want to focus on two rev challenges: 'Is it data or data?' and 'It's data, not data'. They're both related, you could say 'not data' is a sequel of 'or data?', introducing more complex logic.
+This past weekend (05/09-05/11), we participated in DamCTF 2025, organized by the Oregon State University Security Club. On this writeup, I want to focus on two rev challenges: 'Is it data or data?' and 'It's data, not data'. They're both related, in that they're two different versions of a similar 'game', albeit with different rules and possible commands. You could say 'not data' is a sequel to 'or data?', especially since the CTF admins reccomended playing one after finishing the other.
 
 ## Is it data or data?
 'Is it data or data?' does not have a problem description, it simply gives you an executable. Running it, it seems to simply print a chevron ('>'), expecting some form of input. Depending on your input, the program either closes or continues running. Not much to go off of with only this, so let's dive into the code. For decompiling, I used Ghidra.
@@ -307,7 +307,8 @@ log.success(f"\n{final_output}")
 
 io.close()
 ```
-Running this, we finally get the flag: `dam{I_dont_like_silicon_it_makes_cpus_and_theyre_everywhere}`
+Running this, we finally get the flag:\
+ `dam{I_dont_like_silicon_it_makes_cpus_and_theyre_everywhere}`
 
 ## It's data, not data
 This is merely a more complex version of the game we played in the first challenge. Let's look at the main function:
@@ -451,7 +452,7 @@ Before we show the solution, let's dive a little deeper into these obfuscated fu
 		else {return false;}
 	}
 ```
-This code checks if stoi throws an error, and this will happen if `func` contains an invalid character. In this case, we want it to, when we type 'l' and 'r'. The decompilation doesn't clearly show the equivalent of the `catch (const std::invalid_argument & e)` block from the original code, decompilers often struggle with dealing with the high level logic of `try...catch` blocks. Which is why, in `FUN_00103956` we can see all the commands for numeric values, but not the two possible character based commands.
+This code checks if `stoi` throws an error, and this will happen if `func` contains an invalid character. In this case, we want it to, when we type 'l' and 'r'. The decompilation doesn't clearly show the equivalent of the `catch (const std::invalid_argument & e)` block from the original code, decompilers often struggle with dealing with the high level logic of `try...catch` blocks. Which is why, in `FUN_00103956` we can see all the commands for numeric values, but not the two possible character based commands.
 
 I won't show the entire solution sequence we used here, you can check out the logs at our [github repo](https://github.com/cloudlabs-ufscar/blog/blob/main/content/sec/dam-ctf-2025-data/its_data_not_data/solution.txt), as well as all the other files for the challenges and the ones we used for solving them. In the end, after playing the game, we got the flag `dam{git_branch_origin._you_are_a_pulled_one}`.
 
