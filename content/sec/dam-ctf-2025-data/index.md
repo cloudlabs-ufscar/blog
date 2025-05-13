@@ -10,7 +10,7 @@ featured = true
   locale = "en"
 +++
 
-This past weekend (05/09-05/11), we participated in DamCTF 2025, organized by the Oregon State University Security Club. On this writeup, I want to focus on two rev challenges: 'Is it data or data?' and 'It's data, not data'. They're both related, in that they're two different versions of a similar 'game', albeit with different rules and possible commands. You could say 'not data' is a sequel to 'or data?', especially since the CTF admins recommended playing one after finishing the other.
+This past weekend (05/09-05/11), we participated in DamCTF 2025, organized by the Oregon State University Security Club. On this writeup, I want to focus on two reverse engineering challenges: 'Is it data or data?' and 'It's data, not data'. They're both related, in that they're two different versions of a similar 'game', albeit with different rules and possible commands. You could say 'not data' is a sequel to 'or data?', especially since the CTF admins recommended playing one after finishing the other.
 
 ## Is it data or data?
 'Is it data or data?' does not have a problem description, it simply gives you an executable. Running it, it seems to simply print a chevron ('>'), expecting some form of input. Depending on your input, the program either closes or continues running. Not much to go off of with only this, so let's dive into the code. For decompiling, I used Ghidra.
