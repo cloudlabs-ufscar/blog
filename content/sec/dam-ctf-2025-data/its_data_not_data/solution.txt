@@ -1,0 +1,537 @@
+3
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+                  ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+                 ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+                ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+               ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+              ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+             ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+            ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+           ‾
+> l
+Move Number: 1 of 100
+Target : episode3,57min34sec
+Current: e'io<,QVtJu",n48%)J
+          ‾
+> 24
+Move Number: 2 of 100
+Target : episode3,57min34sec
+Current: eqio<,QVtJu",n48%)J
+          ‾
+> 3
+Move Number: 3 of 100
+Target : episode3,57min34sec
+Current: epio<,QVtJu",n48%)J
+          ‾
+> r
+Move Number: 3 of 100
+Target : episode3,57min34sec
+Current: epio<,QVtJu",n48%)J
+           ‾
+> r
+Move Number: 3 of 100
+Target : episode3,57min34sec
+Current: epio<,QVtJu",n48%)J
+            ‾
+> 24
+Move Number: 4 of 100
+Target : episode3,57min34sec
+Current: epiq<,QVtJu",n48%)J
+            ‾
+> 2
+Move Number: 5 of 100
+Target : episode3,57min34sec
+Current: epit<,QVtJu",n48%)J
+            ‾
+> 3
+Move Number: 6 of 100
+Target : episode3,57min34sec
+Current: epis<,QVtJu",n48%)J
+            ‾
+> r
+Move Number: 6 of 100
+Target : episode3,57min34sec
+Current: epis<,QVtJu",n48%)J
+             ‾
+> 1 111
+Move Number: 7 of 100
+Target : episode3,57min34sec
+Current: episo,QVtJu",n48%)J
+             ‾
+> r
+Move Number: 7 of 100
+Target : episode3,57min34sec
+Current: episo,QVtJu",n48%)J
+              ‾
+> 19
+Move Number: 8 of 100
+Target : episode3,57min34sec
+Current: episocQVtJu",n48%)J
+              ‾
+> 2
+Move Number: 9 of 100
+Target : episode3,57min34sec
+Current: episofQVtJu",n48%)J
+              ‾
+> 3
+Move Number: 10 of 100
+Target : episode3,57min34sec
+Current: episoeQVtJu",n48%)J
+              ‾
+> 3
+Move Number: 11 of 100
+Target : episode3,57min34sec
+Current: episodQVtJu",n48%)J
+              ‾
+> r
+Move Number: 11 of 100
+Target : episode3,57min34sec
+Current: episodQVtJu",n48%)J
+               ‾
+> 19
+Move Number: 12 of 100
+Target : episode3,57min34sec
+Current: episodcVtJu",n48%)J
+               ‾
+> 2
+Move Number: 13 of 100
+Target : episode3,57min34sec
+Current: episodfVtJu",n48%)J
+               ‾
+> 3
+Move Number: 14 of 100
+Target : episode3,57min34sec
+Current: episodeVtJu",n48%)J
+               ‾
+> r
+Move Number: 14 of 100
+Target : episode3,57min34sec
+Current: episodeVtJu",n48%)J
+                ‾
+> 7
+Move Number: 15 of 100
+Target : episode3,57min34sec
+Current: episode7tJu",n48%)J
+                ‾
+> 3
+Move Number: 16 of 100
+Target : episode3,57min34sec
+Current: episode6tJu",n48%)J
+                ‾
+> 3
+Move Number: 17 of 100
+Target : episode3,57min34sec
+Current: episode5tJu",n48%)J
+                ‾
+> 3
+Move Number: 18 of 100
+Target : episode3,57min34sec
+Current: episode4tJu",n48%)J
+                ‾
+> r
+Move Number: 18 of 100
+Target : episode3,57min34sec
+Current: episode4tJu",n48%)J
+                 ‾
+> 1 44
+Move Number: 18 of 100
+Target : episode3,57min34sec
+Current: episode4tJu",n48%)J
+                 ‾
+> l
+Move Number: 18 of 100
+Target : episode3,57min34sec
+Current: episode4tJu",n48%)J
+                ‾
+> 3
+Move Number: 19 of 100
+Target : episode3,57min34sec
+Current: episode3tJu",n48%)J
+                ‾
+> r
+Move Number: 19 of 100
+Target : episode3,57min34sec
+Current: episode3tJu",n48%)J
+                 ‾
+> 22
+Move Number: 20 of 100
+Target : episode3,57min34sec
+Current: episode3;Ju",n48%)J
+                 ‾
+> 3
+Move Number: 21 of 100
+Target : episode3,57min34sec
+Current: episode3:Ju",n48%)J
+                 ‾
+> 3
+Move Number: 22 of 100
+Target : episode3,57min34sec
+Current: episode39Ju",n48%)J
+                 ‾
+> 3
+Move Number: 23 of 100
+Target : episode3,57min34sec
+Current: episode38Ju",n48%)J
+                 ‾
+> 3
+Move Number: 24 of 100
+Target : episode3,57min34sec
+Current: episode37Ju",n48%)J
+                 ‾
+> 3
+Move Number: 25 of 100
+Target : episode3,57min34sec
+Current: episode36Ju",n48%)J
+                 ‾
+> 3
+Move Number: 26 of 100
+Target : episode3,57min34sec
+Current: episode34Ju",n48%)J
+                 ‾
+> 3
+Move Number: 27 of 100
+Target : episode3,57min34sec
+Current: episode32Ju",n48%)J
+                 ‾
+> 3
+Move Number: 28 of 100
+Target : episode3,57min34sec
+Current: episode31Ju",n48%)J
+                 ‾
+> 3
+Move Number: 29 of 100
+Target : episode3,57min34sec
+Current: episode3/Ju",n48%)J
+                 ‾
+> 3
+Move Number: 30 of 100
+Target : episode3,57min34sec
+Current: episode3-Ju",n48%)J
+                 ‾
+> 3
+Move Number: 31 of 100
+Target : episode3,57min34sec
+Current: episode3,Ju",n48%)J
+                 ‾
+> r
+Move Number: 31 of 100
+Target : episode3,57min34sec
+Current: episode3,Ju",n48%)J
+                  ‾
+> 22
+Move Number: 32 of 100
+Target : episode3,57min34sec
+Current: episode3,;u",n48%)J
+                  ‾
+> 3
+Move Number: 33 of 100
+Target : episode3,57min34sec
+Current: episode3,:u",n48%)J
+                  ‾
+> 3
+Move Number: 34 of 100
+Target : episode3,57min34sec
+Current: episode3,9u",n48%)J
+                  ‾
+> 3
+Move Number: 35 of 100
+Target : episode3,57min34sec
+Current: episode3,8u",n48%)J
+                  ‾
+> 3
+Move Number: 36 of 100
+Target : episode3,57min34sec
+Current: episode3,7u",n48%)J
+                  ‾
+> 3
+Move Number: 37 of 100
+Target : episode3,57min34sec
+Current: episode3,6u",n48%)J
+                  ‾
+> 3
+Move Number: 38 of 100
+Target : episode3,57min34sec
+Current: episode3,4u",n48%)J
+                  ‾
+> 2
+Move Number: 39 of 100
+Target : episode3,57min34sec
+Current: episode3,7u",n48%)J
+                  ‾
+> 3
+Move Number: 40 of 100
+Target : episode3,57min34sec
+Current: episode3,4u",n48%)J
+                  ‾
+> 2
+Move Number: 41 of 100
+Target : episode3,57min34sec
+Current: episode3,7u",n48%)J
+                  ‾
+> 3
+Move Number: 42 of 100
+Target : episode3,57min34sec
+Current: episode3,4u",n48%)J
+                  ‾
+> r
+Move Number: 42 of 100
+Target : episode3,57min34sec
+Current: episode3,4u",n48%)J
+                   ‾
+> 22
+Move Number: 43 of 100
+Target : episode3,57min34sec
+Current: episode3,4;",n48%)J
+                   ‾
+> 3
+Move Number: 44 of 100
+Target : episode3,57min34sec
+Current: episode3,4:",n48%)J
+                   ‾
+> 3
+Move Number: 45 of 100
+Target : episode3,57min34sec
+Current: episode3,49",n48%)J
+                   ‾
+> 3
+Move Number: 46 of 100
+Target : episode3,57min34sec
+Current: episode3,48",n48%)J
+                   ‾
+> r
+Move Number: 46 of 100
+Target : episode3,57min34sec
+Current: episode3,48",n48%)J
+                    ‾
+> 24
+Move Number: 47 of 100
+Target : episode3,57min34sec
+Current: episode3,48q,n48%)J
+                    ‾
+> 3
+Move Number: 48 of 100
+Target : episode3,57min34sec
+Current: episode3,48p,n48%)J
+                    ‾
+> 3
+Move Number: 49 of 100
+Target : episode3,57min34sec
+Current: episode3,48o,n48%)J
+                    ‾
+> 3
+Move Number: 50 of 100
+Target : episode3,57min34sec
+Current: episode3,48n,n48%)J
+                    ‾
+> 9
+Move Number: 51 of 100
+Target : episode3,57min34sec
+Current: episode3,4n8,n48%)J
+                    ‾
+> 9
+Move Number: 52 of 100
+Target : episode3,57min34sec
+Current: episode3,48n,n48%)J
+                    ‾
+> 3
+Move Number: 53 of 100
+Target : episode3,57min34sec
+Current: episode3,48m,n48%)J
+                    ‾
+> l
+Move Number: 53 of 100
+Target : episode3,57min34sec
+Current: episode3,48m,n48%)J
+                   ‾
+> 9
+Move Number: 54 of 100
+Target : episode3,57min34sec
+Current: episode3,84m,n48%)J
+                   ‾
+> 3
+Move Number: 55 of 100
+Target : episode3,57min34sec
+Current: episode3,83m,n48%)J
+                   ‾
+> 9
+Move Number: 56 of 100
+Target : episode3,57min34sec
+Current: episode3,38m,n48%)J
+                   ‾
+> 3
+Move Number: 57 of 100
+Target : episode3,57min34sec
+Current: episode3,37m,n48%)J
+                   ‾
+> l
+Move Number: 57 of 100
+Target : episode3,57min34sec
+Current: episode3,37m,n48%)J
+                  ‾
+> 2
+Move Number: 58 of 100
+Target : episode3,57min34sec
+Current: episode3,67m,n48%)J
+                  ‾
+> 3
+Move Number: 59 of 100
+Target : episode3,57min34sec
+Current: episode3,57m,n48%)J
+                  ‾
+> r
+Move Number: 59 of 100
+Target : episode3,57min34sec
+Current: episode3,57m,n48%)J
+                   ‾
+> r
+Move Number: 59 of 100
+Target : episode3,57min34sec
+Current: episode3,57m,n48%)J
+                    ‾
+> r
+Move Number: 59 of 100
+Target : episode3,57min34sec
+Current: episode3,57m,n48%)J
+                     ‾
+> 19
+Move Number: 60 of 100
+Target : episode3,57min34sec
+Current: episode3,57mcn48%)J
+                     ‾
+> 2
+Move Number: 61 of 100
+Target : episode3,57min34sec
+Current: episode3,57mfn48%)J
+                     ‾
+> 2
+Move Number: 62 of 100
+Target : episode3,57min34sec
+Current: episode3,57min48%)J
+                     ‾
+> r
+Move Number: 62 of 100
+Target : episode3,57min34sec
+Current: episode3,57min48%)J
+                      ‾
+> r
+Move Number: 62 of 100
+Target : episode3,57min34sec
+Current: episode3,57min48%)J
+                       ‾
+> 3
+Move Number: 63 of 100
+Target : episode3,57min34sec
+Current: episode3,57min38%)J
+                       ‾
+> r
+Move Number: 63 of 100
+Target : episode3,57min34sec
+Current: episode3,57min38%)J
+                        ‾
+> 3
+Move Number: 64 of 100
+Target : episode3,57min34sec
+Current: episode3,57min37%)J
+                        ‾
+> 3
+Move Number: 65 of 100
+Target : episode3,57min34sec
+Current: episode3,57min36%)J
+                        ‾
+> 3
+Move Number: 66 of 100
+Target : episode3,57min34sec
+Current: episode3,57min35%)J
+                        ‾
+> r
+Move Number: 66 of 100
+Target : episode3,57min34sec
+Current: episode3,57min35%)J
+                         ‾
+> 24
+Move Number: 67 of 100
+Target : episode3,57min34sec
+Current: episode3,57min35q)J
+                         ‾
+> 2
+Move Number: 68 of 100
+Target : episode3,57min34sec
+Current: episode3,57min35t)J
+                         ‾
+> 3
+Move Number: 69 of 100
+Target : episode3,57min34sec
+Current: episode3,57min35s)J
+                         ‾
+> l
+Move Number: 69 of 100
+Target : episode3,57min34sec
+Current: episode3,57min35s)J
+                        ‾
+> 3
+Move Number: 70 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34s)J
+                        ‾
+> r
+Move Number: 70 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34s)J
+                         ‾
+> r
+Move Number: 70 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34s)J
+                          ‾
+> 19
+Move Number: 71 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34scJ
+                          ‾
+> 3
+Move Number: 72 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34sbJ
+                          ‾
+> 2
+Move Number: 73 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34seJ
+                          ‾
+> r
+Move Number: 73 of 100
+Target : episode3,57min34sec
+Current: episode3,57min34seJ
+                           ‾
+> 19
+dam{git_branch_origin._you_are_a_pulled_one}

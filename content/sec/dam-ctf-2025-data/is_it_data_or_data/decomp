@@ -1,0 +1,1484 @@
+#include "out.h"
+
+
+
+void _DT_INIT(void)
+
+{
+  __gmon_start__();
+  return;
+}
+
+
+
+void FUN_00102020(void)
+
+{
+  (*(code *)(undefined *)0x0)();
+  return;
+}
+
+
+
+void __cxa_finalize(void)
+
+{
+  __cxa_finalize();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+int * __errno_location(void)
+
+{
+  int *piVar1;
+  
+  piVar1 = __errno_location();
+  return piVar1;
+}
+
+
+
+void __thiscall std::iostream::~iostream(iostream *this)
+
+{
+  ~iostream(this);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::ifstream::close(void)
+
+{
+  close();
+  return;
+}
+
+
+
+void __thiscall std::ifstream::~ifstream(ifstream *this)
+
+{
+  ~ifstream(this);
+  return;
+}
+
+
+
+void __thiscall std::ios_base::ios_base(ios_base *this)
+
+{
+  ios_base(this);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_append(char *param_1,ulong param_2)
+
+{
+  _M_append(param_1,param_2);
+  return;
+}
+
+
+
+void __thiscall std::ios_base::~ios_base(ios_base *this)
+
+{
+  ~ios_base(this);
+  return;
+}
+
+
+
+void __cxa_begin_catch(void)
+
+{
+  __cxa_begin_catch();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+int memcmp(void *__s1,void *__s2,size_t __n)
+
+{
+  int iVar1;
+  
+  iVar1 = memcmp(__s1,__s2,__n);
+  return iVar1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__throw_length_error(char *param_1)
+
+{
+  __throw_length_error(param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_assign(string *param_1)
+
+{
+  _M_assign(param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__throw_invalid_argument(char *param_1)
+
+{
+  __throw_invalid_argument(param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__throw_logic_error(char *param_1)
+
+{
+  __throw_logic_error(param_1);
+  return;
+}
+
+
+
+void __thiscall std::stringstream::~stringstream(stringstream *this)
+
+{
+  ~stringstream(this);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void * memcpy(void *__dest,void *__src,size_t __n)
+
+{
+  void *pvVar1;
+  
+  pvVar1 = memcpy(__dest,__src,__n);
+  return pvVar1;
+}
+
+
+
+void __cxa_atexit(void)
+
+{
+  __cxa_atexit();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void operator_delete(void *param_1,ulong param_2)
+
+{
+  operator_delete(param_1,param_2);
+  return;
+}
+
+
+
+void __stack_chk_fail(void)
+
+{
+                    // WARNING: Subroutine does not return
+  __stack_chk_fail();
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+ostream * std::__ostream_insert<char,std::char_traits<char>>
+                    (ostream *param_1,char *param_2,long param_3)
+
+{
+  ostream *poVar1;
+  
+  poVar1 = __ostream_insert<char,std::char_traits<char>>(param_1,param_2,param_3);
+  return poVar1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::ctype<char>::_M_widen_init(void)
+
+{
+  _M_widen_init();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_erase(ulong param_1,ulong param_2)
+
+{
+  _M_erase(param_1,param_2);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void exit(int __status)
+
+{
+                    // WARNING: Subroutine does not return
+  exit(__status);
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_dispose(void)
+
+{
+  _M_dispose();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__throw_bad_cast(void)
+
+{
+  __throw_bad_cast();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::stringbuf::_M_sync(char *param_1,ulong param_2,ulong param_3)
+
+{
+  _M_sync(param_1,param_2,param_3);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::ios::init(streambuf *param_1)
+
+{
+  init(param_1);
+  return;
+}
+
+
+
+void __thiscall std::locale::~locale(locale *this)
+
+{
+  ~locale(this);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__throw_out_of_range(char *param_1)
+
+{
+  __throw_out_of_range(param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::__throw_out_of_range_fmt(char *param_1,...)
+
+{
+  __throw_out_of_range_fmt(param_1);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::reserve(ulong param_1)
+
+{
+  reserve(param_1);
+  return;
+}
+
+
+
+void __cxa_end_catch(void)
+
+{
+  __cxa_end_catch();
+  return;
+}
+
+
+
+void _Unwind_Resume(void)
+
+{
+                    // WARNING: Subroutine does not return
+  _Unwind_Resume();
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_create(ulong *param_1,ulong param_2)
+
+{
+  _M_create(param_1,param_2);
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_mutate(ulong param_1,ulong param_2,char *param_3,ulong param_4)
+
+{
+  _M_mutate(param_1,param_2,param_3,param_4);
+  return;
+}
+
+
+
+void __thiscall std::ifstream::ifstream(void)
+
+{
+  ifstream();
+  return;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+istream * std::getline<char,std::char_traits<char>,std::allocator<char>>
+                    (istream *param_1,string *param_2,char param_3)
+
+{
+  istream *piVar1;
+  
+  piVar1 = getline<char,std::char_traits<char>,std::allocator<char>>(param_1,param_2,param_3);
+  return piVar1;
+}
+
+
+
+// WARNING: Unknown calling convention -- yet parameter storage is locked
+
+void std::string::_M_replace_aux(ulong param_1,ulong param_2,ulong param_3,char param_4)
+
+{
+  _M_replace_aux(param_1,param_2,param_3,param_4);
+  return;
+}
+
+
+
+void __thiscall std::locale::locale(locale *this)
+
+{
+  locale(this);
+  return;
+}
+
+
+
+void processEntry entry(undefined8 param_1,undefined8 param_2)
+
+{
+  undefined1 auStack_8 [8];
+  
+  __libc_start_main(FUN_00103a6a,param_2,&stack0x00000008,0,0,param_1,auStack_8);
+  do {
+                    // WARNING: Do nothing block with infinite loop
+  } while( true );
+}
+
+
+
+// WARNING: Removing unreachable block (ram,0x00102543)
+// WARNING: Removing unreachable block (ram,0x0010254f)
+
+void FUN_00102530(void)
+
+{
+  return;
+}
+
+
+
+// WARNING: Removing unreachable block (ram,0x00102584)
+// WARNING: Removing unreachable block (ram,0x00102590)
+
+void FUN_00102560(void)
+
+{
+  return;
+}
+
+
+
+void _FINI_0(void)
+
+{
+  if (DAT_00106278 != '\0') {
+    return;
+  }
+  __cxa_finalize(PTR_LOOP_00106008);
+  FUN_00102530();
+  DAT_00106278 = 1;
+  return;
+}
+
+
+
+void _INIT_0(void)
+
+{
+  FUN_00102560();
+  return;
+}
+
+
+
+void FUN_001025e9(void)
+
+{
+  long *plVar1;
+  ulong uVar2;
+  ulong uVar3;
+  undefined8 uVar4;
+  long *plVar5;
+  uint uVar6;
+  long *plVar7;
+  long lVar8;
+  long *plVar9;
+  long in_FS_OFFSET;
+  undefined1 *local_68;
+  ulong local_60;
+  undefined1 local_58;
+  undefined7 uStack_57;
+  long *local_48;
+  long local_40;
+  long local_38 [5];
+  
+  uVar3 = DAT_001062a8;
+  uVar2 = DAT_001062a0;
+  local_38[3] = *(long *)(in_FS_OFFSET + 0x28);
+  local_68 = &local_58;
+  local_60 = 0;
+  local_58 = 0;
+                    // try { // try from 0010262f to 001026e3 has its CatchHandler @ 0010267b
+  std::string::reserve((ulong)&local_68);
+  if (0x3fffffffffffffff - local_60 < 9) {
+    if (local_38[3] != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+      __stack_chk_fail();
+    }
+    uVar4 = std::__throw_length_error("basic_string::append");
+                    // catch() { ... } // from try @ 0010262f with catch @ 0010267b
+    std::string::_M_dispose();
+    if (local_38[3] != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+      __stack_chk_fail();
+    }
+                    // WARNING: Subroutine does not return
+    _Unwind_Resume(uVar4);
+  }
+  std::string::_M_append((char *)&local_68,0x104019);
+  if (0x3fffffffffffffff - local_60 < uVar3) {
+    if (local_38[3] == *(long *)(in_FS_OFFSET + 0x28)) {
+      std::__throw_length_error("basic_string::append");
+    }
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+  std::string::_M_append((char *)&local_68,uVar2);
+                    // try { // try from 00102709 to 0010270d has its CatchHandler @ 00102858
+  plVar5 = (long *)std::string::_M_replace_aux((ulong)&local_68,local_60,0,'\x01');
+  local_48 = local_38;
+  plVar1 = plVar5 + 2;
+  if ((long *)*plVar5 == plVar1) {
+    plVar9 = local_38;
+    uVar2 = plVar5[1] + 1;
+    plVar7 = plVar1;
+    if (7 < (uint)uVar2) {
+      uVar6 = 0;
+      do {
+        *(undefined8 *)((long)plVar9 + (ulong)uVar6) = *(undefined8 *)((long)plVar1 + (ulong)uVar6);
+        uVar6 = uVar6 + 8;
+      } while (uVar6 < ((uint)uVar2 & 0xfffffff8));
+      plVar9 = (long *)((long)plVar9 + (ulong)uVar6);
+      plVar7 = (long *)((ulong)uVar6 + (long)plVar1);
+    }
+    lVar8 = 0;
+    if ((uVar2 & 4) != 0) {
+      *(int *)plVar9 = (int)*plVar7;
+      lVar8 = 4;
+    }
+    if ((uVar2 & 2) != 0) {
+      *(undefined2 *)((long)plVar9 + lVar8) = *(undefined2 *)((long)plVar7 + lVar8);
+      lVar8 = lVar8 + 2;
+    }
+    if ((uVar2 & 1) != 0) {
+      *(undefined1 *)((long)plVar9 + lVar8) = *(undefined1 *)((long)plVar7 + lVar8);
+    }
+  }
+  else {
+    local_38[0] = plVar5[2];
+    local_48 = (long *)*plVar5;
+  }
+  local_40 = plVar5[1];
+  *plVar5 = (long)plVar1;
+  plVar5[1] = 0;
+  *(undefined1 *)(plVar5 + 2) = 0;
+                    // try { // try from 00102759 to 0010275d has its CatchHandler @ 0010282a
+  std::__ostream_insert<char,std::char_traits<char>>((ostream *)std::cout,(char *)local_48,local_40)
+  ;
+  if (local_48 != local_38) {
+    operator_delete(local_48,local_38[0] + 1);
+  }
+  if (local_68 != &local_58) {
+    operator_delete(local_68,CONCAT71(uStack_57,local_58) + 1);
+  }
+  if (local_38[3] == *(long *)(in_FS_OFFSET + 0x28)) {
+    return;
+  }
+                    // WARNING: Subroutine does not return
+  __stack_chk_fail();
+}
+
+
+
+undefined8 FUN_0010286e(void)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  if (DAT_00106280 == 7) {
+    uVar1 = DAT_001062a8 + 1;
+    uVar3 = DAT_001062b0;
+    if (DAT_001062a0 == &DAT_001062b0) {
+      uVar3 = 0xf;
+    }
+    if (uVar3 < uVar1) {
+      std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+    }
+    *(undefined1 *)((long)DAT_001062a0 + uVar2) = 0x67;
+    DAT_001062a8 = uVar1;
+    *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+    return 1;
+  }
+  return 0;
+}
+
+
+
+void FUN_00102900(void)
+
+{
+  char cVar1;
+  char *pcVar2;
+  
+  pcVar2 = (char *)(((int)DAT_001062a8 + -1) + DAT_001062a0);
+  cVar1 = *pcVar2;
+  if (cVar1 < '{') {
+    *pcVar2 = cVar1 + '\x03';
+  }
+  return;
+}
+
+
+
+void FUN_00102924(void)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  uVar1 = DAT_001062a8 + 1;
+  uVar3 = DAT_001062b0;
+  if (DAT_001062a0 == &DAT_001062b0) {
+    uVar3 = 0xf;
+  }
+  if (uVar3 < uVar1) {
+    std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+  }
+  *(undefined1 *)((long)DAT_001062a0 + uVar2) = 0x61;
+  DAT_001062a8 = uVar1;
+  *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+  return;
+}
+
+
+
+void FUN_001029a2(void)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  uVar1 = DAT_001062a8 + 1;
+  uVar3 = DAT_001062b0;
+  if (DAT_001062a0 == &DAT_001062b0) {
+    uVar3 = 0xf;
+  }
+  if (uVar3 < uVar1) {
+    std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+  }
+  *(undefined1 *)((long)DAT_001062a0 + uVar2) = 0x72;
+  DAT_001062a8 = uVar1;
+  *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+  return;
+}
+
+
+
+void FUN_00102a20(void)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  uVar1 = DAT_001062a8 + 1;
+  uVar3 = DAT_001062b0;
+  if (DAT_001062a0 == &DAT_001062b0) {
+    uVar3 = 0xf;
+  }
+  if (uVar3 < uVar1) {
+    std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+  }
+  *(undefined1 *)((long)DAT_001062a0 + uVar2) = 0x7a;
+  DAT_001062a8 = uVar1;
+  *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+  return;
+}
+
+
+
+void FUN_00102a9e(void)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  uVar1 = DAT_001062a8 + 1;
+  uVar3 = DAT_001062b0;
+  if (DAT_001062a0 == &DAT_001062b0) {
+    uVar3 = 0xf;
+  }
+  if (uVar3 < uVar1) {
+    std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+  }
+  *(undefined1 *)((long)DAT_001062a0 + uVar2) = 0x6d;
+  DAT_001062a8 = uVar1;
+  *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+  return;
+}
+
+
+
+undefined8 FUN_00102b1c(int param_1)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  if (param_1 - 0x21U < 0x5e) {
+    uVar1 = DAT_001062a8 + 1;
+    uVar3 = DAT_001062b0;
+    if (DAT_001062a0 == &DAT_001062b0) {
+      uVar3 = 0xf;
+    }
+    if (uVar3 < uVar1) {
+      std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+    }
+    *(char *)((long)DAT_001062a0 + uVar2) = (char)param_1;
+    DAT_001062a8 = uVar1;
+    *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+    DAT_00106010 = 0;
+    return 1;
+  }
+  return 0;
+}
+
+
+
+void FUN_00102bb1(void)
+
+{
+  if (0 < (int)DAT_001062a8) {
+    *(undefined1 *)(DAT_001062a0 + ((int)DAT_001062a8 + -1)) = 0x74;
+  }
+  return;
+}
+
+
+
+void FUN_00102bd1(void)
+
+{
+  ulong uVar1;
+  ulong uVar2;
+  ulong uVar3;
+  
+  uVar2 = DAT_001062a8;
+  uVar1 = DAT_001062a8 + 1;
+  uVar3 = DAT_001062b0;
+  if (DAT_001062a0 == &DAT_001062b0) {
+    uVar3 = 0xf;
+  }
+  if (uVar3 < uVar1) {
+    std::string::_M_mutate(0x1062a0,DAT_001062a8,(char *)0x0,0);
+  }
+  *(undefined1 *)((long)DAT_001062a0 + uVar2) = 0x66;
+  DAT_001062a8 = uVar1;
+  *(undefined1 *)((long)DAT_001062a0 + uVar2 + 1) = 0;
+  return;
+}
+
+
+
+void FUN_00102c4f(void)
+
+{
+  char cVar1;
+  char *pcVar2;
+  ulong uVar3;
+  
+  if ((int)DAT_001062a8 < 1) {
+    return;
+  }
+  uVar3 = (ulong)((int)DAT_001062a8 + -1);
+  if (uVar3 <= CONCAT44(DAT_001062a8._4_4_,(int)DAT_001062a8)) {
+    std::string::_M_erase(0x1062a0,uVar3);
+    return;
+  }
+  std::__throw_out_of_range_fmt
+            ("%s: __pos (which is %zu) > this->size() (which is %zu)","basic_string::erase",uVar3,
+             CONCAT44(DAT_001062a8._4_4_,(int)DAT_001062a8));
+  pcVar2 = (char *)(((int)DAT_001062a8 + -1) + DAT_001062a0);
+  cVar1 = *pcVar2;
+  if ('!' < cVar1) {
+    *pcVar2 = cVar1 + -1;
+  }
+  return;
+}
+
+
+
+void FUN_00102cad(void)
+
+{
+  char cVar1;
+  char *pcVar2;
+  
+  pcVar2 = (char *)(((int)DAT_001062a8 + -1) + DAT_001062a0);
+  cVar1 = *pcVar2;
+  if ('!' < cVar1) {
+    *pcVar2 = cVar1 + -1;
+  }
+  return;
+}
+
+
+
+undefined8 FUN_00102cd1(void)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  undefined4 extraout_var;
+  
+  uVar2 = 0;
+  if ((DAT_001062c8 == DAT_001062a8) && (uVar2 = 1, DAT_001062c8 != 0)) {
+    iVar1 = memcmp(DAT_001062c0,DAT_001062a0,DAT_001062c8);
+    return CONCAT71((int7)(CONCAT44(extraout_var,iVar1) >> 8),iVar1 == 0);
+  }
+  return uVar2;
+}
+
+
+
+void FUN_00102d16(void)
+
+{
+  undefined1 *puVar1;
+  ulong uVar2;
+  char cVar3;
+  istream *piVar4;
+  undefined8 uVar5;
+  long *plVar6;
+  long in_FS_OFFSET;
+  undefined1 local_289;
+  undefined1 *local_288;
+  ulong local_280;
+  undefined1 local_278 [16];
+  char *local_268;
+  long local_260;
+  char local_258;
+  undefined7 uStack_257;
+  long local_248 [30];
+  long alStack_158 [35];
+  long local_40;
+  
+  local_40 = *(long *)(in_FS_OFFSET + 0x28);
+  local_288 = local_278;
+  local_280 = 0;
+  local_278[0] = 0;
+                    // try { // try from 00102d67 to 00102d6b has its CatchHandler @ 00102f81
+  std::ifstream::ifstream((ifstream *)local_248,"flag.txt",8);
+  plVar6 = *(long **)((long)alStack_158 + *(long *)(local_248[0] + -0x18));
+  if (plVar6 != (long *)0x0) {
+    do {
+      if ((char)plVar6[7] == '\0') {
+        std::ctype<char>::_M_widen_init();
+        cVar3 = (**(code **)(*plVar6 + 0x30))(plVar6,10);
+      }
+      else {
+        cVar3 = *(char *)((long)plVar6 + 0x43);
+      }
+                    // try { // try from 00102ec5 to 00102f0a has its CatchHandler @ 00102ee4
+      piVar4 = std::getline<char,std::char_traits<char>,std::allocator<char>>
+                         ((istream *)local_248,(string *)&local_288,cVar3);
+      uVar2 = local_280;
+      puVar1 = local_288;
+      if (((byte)piVar4[*(long *)(*(long *)piVar4 + -0x18) + 0x20] & 5) != 0) {
+                    // try { // try from 00102f5c to 00102f60 has its CatchHandler @ 00102ee4
+        std::ifstream::close();
+                    // WARNING: Subroutine does not return
+        exit(0);
+      }
+      local_289 = 10;
+      local_268 = &local_258;
+      local_260 = 0;
+      local_258 = '\0';
+                    // try { // try from 00102f4d to 00102f51 has its CatchHandler @ 00102de4
+      std::string::reserve((ulong)&local_268);
+      if (0x3fffffffffffffffU - local_260 < uVar2) {
+        if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+          __stack_chk_fail();
+        }
+        uVar5 = std::__throw_length_error("basic_string::append");
+                    // catch() { ... } // from try @ 00102dbe with catch @ 00102de4
+                    // catch() { ... } // from try @ 00102f4d with catch @ 00102de4
+        std::string::_M_dispose();
+        goto LAB_00102df5;
+      }
+                    // try { // try from 00102dbe to 00102e65 has its CatchHandler @ 00102de4
+      std::string::_M_append((char *)&local_268,(ulong)puVar1);
+      if (local_260 == 0x3fffffffffffffff) {
+        if (local_40 == *(long *)(in_FS_OFFSET + 0x28)) {
+          std::__throw_length_error("basic_string::append");
+        }
+                    // WARNING: Subroutine does not return
+        __stack_chk_fail();
+      }
+      std::string::_M_append((char *)&local_268,(ulong)&local_289);
+                    // try { // try from 00102e78 to 00102e7c has its CatchHandler @ 00102f6b
+      std::__ostream_insert<char,std::char_traits<char>>((ostream *)std::cout,local_268,local_260);
+      if (local_268 != &local_258) {
+        operator_delete(local_268,CONCAT71(uStack_257,local_258) + 1);
+      }
+      plVar6 = *(long **)((long)alStack_158 + *(long *)(local_248[0] + -0x18));
+    } while (plVar6 != (long *)0x0);
+  }
+  if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+  uVar5 = std::__throw_bad_cast();
+                    // catch() { ... } // from try @ 00102ec5 with catch @ 00102ee4
+                    // catch() { ... } // from try @ 00102f5c with catch @ 00102ee4
+LAB_00102df5:
+  std::ifstream::~ifstream((ifstream *)local_248);
+  std::string::_M_dispose();
+  if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+                    // WARNING: Subroutine does not return
+  _Unwind_Resume(uVar5);
+}
+
+
+
+uint FUN_00102f95(void)
+
+{
+  long *plVar1;
+  char cVar2;
+  int iVar3;
+  undefined4 uVar4;
+  undefined8 uVar5;
+  istream *piVar6;
+  bool bVar7;
+  int iVar8;
+  uint uVar9;
+  long in_FS_OFFSET;
+  undefined1 *local_268;
+  long local_260;
+  undefined1 local_258;
+  undefined7 uStack_257;
+  undefined1 *local_248;
+  undefined8 local_240;
+  undefined1 local_238;
+  undefined7 uStack_237;
+  long *local_228;
+  long local_220;
+  long local_218 [2];
+  long *local_208;
+  long local_200;
+  long local_1f8 [2];
+  undefined1 *local_1e8;
+  undefined8 local_1e0;
+  undefined1 local_1d8;
+  undefined7 uStack_1d7;
+  long local_1c8 [2];
+  long local_1b8;
+  char local_1b0 [56];
+  locale local_178 [8];
+  undefined4 local_170;
+  long *local_168 [2];
+  long local_158 [2];
+  undefined8 local_148 [27];
+  undefined8 local_70;
+  undefined1 local_68;
+  undefined1 local_67;
+  undefined8 local_60;
+  undefined8 local_58;
+  undefined8 local_50;
+  undefined8 local_48;
+  long local_40;
+  
+  local_40 = *(long *)(in_FS_OFFSET + 0x28);
+  local_268 = &local_258;
+  local_260 = 0;
+  local_258 = 0;
+  local_248 = &local_238;
+  local_240 = 0;
+  local_238 = 0;
+  local_228 = local_218;
+                    // try { // try from 00103007 to 0010300b has its CatchHandler @ 00103a51
+  std::string::_M_construct<char_const*>(&local_228,&DAT_00104040);
+  local_208 = local_1f8;
+                    // try { // try from 00103029 to 0010302d has its CatchHandler @ 00103a45
+  std::string::_M_construct<char_const*>(&local_208,&DAT_00104040);
+  local_1e8 = &local_1d8;
+  local_1e0 = 0;
+  local_1d8 = 0;
+                    // try { // try from 00103065 to 001030e7 has its CatchHandler @ 001030c1
+  std::__ostream_insert<char,std::char_traits<char>>((ostream *)std::cout,"> ",2);
+  plVar1 = *(long **)(&DAT_00106250 + *(long *)(std::cin + -0x18));
+  if (plVar1 == (long *)0x0) {
+    if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+      __stack_chk_fail();
+    }
+    uVar5 = std::__throw_bad_cast();
+                    // catch() { ... } // from try @ 00103065 with catch @ 001030c1
+  }
+  else {
+    if ((char)plVar1[7] == '\0') {
+      std::ctype<char>::_M_widen_init();
+      cVar2 = (**(code **)(*plVar1 + 0x30))(plVar1,10);
+    }
+    else {
+      cVar2 = *(char *)((long)plVar1 + 0x43);
+    }
+    std::getline<char,std::char_traits<char>,std::allocator<char>>
+              ((istream *)&std::cin,(string *)&local_268,cVar2);
+    std::ios_base::ios_base((ios_base *)local_148);
+    local_148[0] = 0x105a90;
+    local_70 = 0;
+    local_68 = 0;
+    local_67 = 0;
+    local_60 = 0;
+    local_58 = 0;
+    local_50 = 0;
+    local_48 = 0;
+    local_1c8[0] = 0;
+    *(undefined8 *)((long)local_1c8 + lRamffffffffffffffe8) = 0;
+    local_1c8[1] = 0;
+                    // try { // try from 0010319f to 001031a3 has its CatchHandler @ 001034a0
+    std::ios::init((streambuf *)((long)local_1c8 + *(long *)(local_1c8[0] + -0x18)));
+    local_1b8 = 0;
+    *(undefined8 *)((long)&local_1b8 + lRamffffffffffffffe8) = 0;
+                    // try { // try from 001031df to 001031e3 has its CatchHandler @ 001032f2
+    std::ios::init((streambuf *)((long)&local_1b8 + *(long *)(local_1b8 + -0x18)));
+    *(undefined8 *)((long)local_1c8 + lRamffffffffffffffe8) = 0;
+    local_1c8[0] = 0x105b88;
+    local_148[0] = 0x105bd8;
+    local_1b8 = 0x105bb0;
+    local_1b0[0] = '\0';
+    local_1b0[1] = '[';
+    local_1b0[2] = '\x10';
+    local_1b0[3] = '\0';
+    local_1b0[4] = '\0';
+    local_1b0[5] = '\0';
+    local_1b0[6] = '\0';
+    local_1b0[7] = '\0';
+    local_1b0[8] = '\0';
+    local_1b0[9] = '\0';
+    local_1b0[10] = '\0';
+    local_1b0[0xb] = '\0';
+    local_1b0[0xc] = '\0';
+    local_1b0[0xd] = '\0';
+    local_1b0[0xe] = '\0';
+    local_1b0[0xf] = '\0';
+    local_1b0[0x10] = '\0';
+    local_1b0[0x11] = '\0';
+    local_1b0[0x12] = '\0';
+    local_1b0[0x13] = '\0';
+    local_1b0[0x14] = '\0';
+    local_1b0[0x15] = '\0';
+    local_1b0[0x16] = '\0';
+    local_1b0[0x17] = '\0';
+    local_1b0[0x18] = '\0';
+    local_1b0[0x19] = '\0';
+    local_1b0[0x1a] = '\0';
+    local_1b0[0x1b] = '\0';
+    local_1b0[0x1c] = '\0';
+    local_1b0[0x1d] = '\0';
+    local_1b0[0x1e] = '\0';
+    local_1b0[0x1f] = '\0';
+    local_1b0[0x20] = '\0';
+    local_1b0[0x21] = '\0';
+    local_1b0[0x22] = '\0';
+    local_1b0[0x23] = '\0';
+    local_1b0[0x24] = '\0';
+    local_1b0[0x25] = '\0';
+    local_1b0[0x26] = '\0';
+    local_1b0[0x27] = '\0';
+    local_1b0[0x28] = '\0';
+    local_1b0[0x29] = '\0';
+    local_1b0[0x2a] = '\0';
+    local_1b0[0x2b] = '\0';
+    local_1b0[0x2c] = '\0';
+    local_1b0[0x2d] = '\0';
+    local_1b0[0x2e] = '\0';
+    local_1b0[0x2f] = '\0';
+    local_1b0[0x30] = '\0';
+    local_1b0[0x31] = '\0';
+    local_1b0[0x32] = '\0';
+    local_1b0[0x33] = '\0';
+    local_1b0[0x34] = '\0';
+    local_1b0[0x35] = '\0';
+    local_1b0[0x36] = '\0';
+    local_1b0[0x37] = '\0';
+    std::locale::locale(local_178);
+    local_1b0[0] = -8;
+    local_1b0[1] = '[';
+    local_1b0[2] = '\x10';
+    local_1b0[3] = '\0';
+    local_1b0[4] = '\0';
+    local_1b0[5] = '\0';
+    local_1b0[6] = '\0';
+    local_1b0[7] = '\0';
+    local_170 = 0;
+    local_168[0] = local_158;
+    bVar7 = local_268 == (undefined1 *)0x0 && local_260 != 0;
+    if (local_268 != (undefined1 *)0x0 || local_260 == 0) {
+                    // try { // try from 001032e8 to 001033a5 has its CatchHandler @ 001033a6
+      std::string::_M_construct<char_const*>(local_168,local_268,local_268 + local_260);
+      local_170 = 0x18;
+                    // try { // try from 001033d9 to 001033dd has its CatchHandler @ 001033e0
+      std::stringbuf::_M_sync(local_1b0,(ulong)local_168[0],0);
+                    // try { // try from 00103439 to 0010343d has its CatchHandler @ 00103443
+      std::ios::init((streambuf *)local_148);
+      iVar8 = 0;
+      while (piVar6 = std::getline<char,std::char_traits<char>,std::allocator<char>>
+                                ((istream *)local_1c8,(string *)&local_248,' '),
+            ((byte)piVar6[*(long *)(*(long *)piVar6 + -0x18) + 0x20] & 5) == 0) {
+        if (iVar8 == 0) {
+                    // try { // try from 001034b4 to 00103504 has its CatchHandler @ 00103a2c
+          std::string::_M_assign((string *)&local_228);
+        }
+        else if (iVar8 == 1) {
+          std::string::_M_assign((string *)&local_208);
+        }
+        iVar8 = iVar8 + 1;
+      }
+                    // try { // try from 00103525 to 00103529 has its CatchHandler @ 001039e4
+      FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+                    // try { // try from 00103548 to 0010354c has its CatchHandler @ 00103a2c
+      iVar3 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+      if (iVar3 == 1) {
+        uVar9 = (uint)DAT_00106010;
+        if ((DAT_00106010 != 0) &&
+           (((local_200 != 1 || ((char)*local_208 != '0')) || (uVar9 = (uint)bVar7, iVar8 != 1)))) {
+                    // try { // try from 00103588 to 0010358c has its CatchHandler @ 00103a08
+          FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_208,0,10);
+                    // try { // try from 001035c3 to 00103991 has its CatchHandler @ 00103a2c
+          uVar4 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_208,0,10);
+          uVar9 = FUN_00102b1c(uVar4);
+        }
+      }
+      else {
+        iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+        if (iVar8 == 0xb) {
+          FUN_00102bb1();
+          uVar9 = 1;
+        }
+        else {
+          iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+          if (iVar8 == 0xd) {
+            FUN_00102c4f();
+            uVar9 = 1;
+          }
+          else {
+            iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+            if (iVar8 == 4) {
+              FUN_00102bd1();
+              uVar9 = 1;
+            }
+            else {
+              iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+              if (iVar8 == 5) {
+                FUN_00102cad();
+                uVar9 = 1;
+              }
+              else {
+                iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+                if (iVar8 == 6) {
+                  FUN_00102900();
+                  uVar9 = 1;
+                }
+                else {
+                  iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+                  if (iVar8 == 7) {
+                    FUN_00102924();
+                    uVar9 = 1;
+                  }
+                  else {
+                    iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+                    if (iVar8 == 0xf) {
+                      FUN_001029a2();
+                      uVar9 = 1;
+                    }
+                    else {
+                      iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+                      if (iVar8 == 9) {
+                        FUN_00102a20();
+                        uVar9 = 1;
+                      }
+                      else {
+                        iVar8 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
+                        if (iVar8 == 10) {
+                          FUN_00102a9e();
+                          uVar9 = 1;
+                        }
+                        else {
+                          uVar9 = (uint)bVar7;
+                          if (local_220 == 8) {
+                            iVar8 = memcmp(local_228,"00111111",8);
+                            if (iVar8 == 0) {
+                              FUN_001025e9();
+                    // WARNING: Subroutine does not return
+                              exit(0);
+                            }
+                            uVar9 = (uint)bVar7;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      local_1c8[0] = 0x105b88;
+      local_148[0] = 0x105bd8;
+      local_1b8 = 0x105bb0;
+      local_1b0[0] = -8;
+      local_1b0[1] = '[';
+      local_1b0[2] = '\x10';
+      local_1b0[3] = '\0';
+      local_1b0[4] = '\0';
+      local_1b0[5] = '\0';
+      local_1b0[6] = '\0';
+      local_1b0[7] = '\0';
+      if (local_168[0] != local_158) {
+        operator_delete(local_168[0],local_158[0] + 1);
+      }
+      local_1b0[0] = '\0';
+      local_1b0[1] = '[';
+      local_1b0[2] = '\x10';
+      local_1b0[3] = '\0';
+      local_1b0[4] = '\0';
+      local_1b0[5] = '\0';
+      local_1b0[6] = '\0';
+      local_1b0[7] = '\0';
+      std::locale::~locale(local_178);
+      *(undefined8 *)((long)local_1c8 + lRamffffffffffffffe8) = 0;
+      local_1b8 = 0;
+      *(undefined8 *)((long)&local_1b8 + lRamffffffffffffffe8) = 0;
+      local_1c8[0] = 0;
+      *(undefined8 *)((long)local_1c8 + lRamffffffffffffffe8) = 0;
+      local_1c8[1] = 0;
+      local_148[0] = 0x105a90;
+      std::ios_base::~ios_base((ios_base *)local_148);
+      if (local_1e8 != &local_1d8) {
+        operator_delete(local_1e8,CONCAT71(uStack_1d7,local_1d8) + 1);
+      }
+      if (local_208 != local_1f8) {
+        operator_delete(local_208,local_1f8[0] + 1);
+      }
+      if (local_228 != local_218) {
+        operator_delete(local_228,local_218[0] + 1);
+      }
+      if (local_248 != &local_238) {
+        operator_delete(local_248,CONCAT71(uStack_237,local_238) + 1);
+      }
+      if (local_268 != &local_258) {
+        operator_delete(local_268,CONCAT71(uStack_257,local_258) + 1);
+      }
+      if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+        __stack_chk_fail();
+      }
+      return uVar9;
+    }
+    if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+      __stack_chk_fail();
+    }
+    uVar5 = std::__throw_logic_error("basic_string: construction from null is not valid");
+    local_1b0[0] = '\0';
+    local_1b0[1] = '[';
+    local_1b0[2] = '\x10';
+    local_1b0[3] = '\0';
+    local_1b0[4] = '\0';
+    local_1b0[5] = '\0';
+    local_1b0[6] = '\0';
+    local_1b0[7] = '\0';
+    std::locale::~locale(local_178);
+    std::iostream::~iostream((iostream *)local_1c8);
+    local_148[0] = 0x105a90;
+    std::ios_base::~ios_base((ios_base *)local_148);
+                    // catch() { ... } // from try @ 001032e8 with catch @ 001033a6
+  }
+  std::string::_M_dispose();
+  std::string::_M_dispose();
+  std::string::_M_dispose();
+  std::string::_M_dispose();
+  std::string::_M_dispose();
+  if (local_40 == *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+    _Unwind_Resume(uVar5);
+  }
+                    // WARNING: Subroutine does not return
+  __stack_chk_fail();
+}
+
+
+// MAIN
+void FUN_00103a6a(void)
+
+{
+  char cVar1;
+  
+  do {
+    cVar1 = FUN_0010286e();
+    while (cVar1 == '\0') {
+      cVar1 = FUN_00102f95();
+    }
+    DAT_00106280 = DAT_00106280 + 1;
+    cVar1 = FUN_00102cd1();
+  } while (cVar1 == '\0');
+  FUN_00102d16();
+  DAT_001062c0 = &DAT_001062d0;
+  std::string::_M_construct<char_const*>(&DAT_001062c0,"inagalaxyfarfaraway");
+  __cxa_atexit(std::string::~string,&DAT_001062c0,&PTR_LOOP_00106008);
+  DAT_001062a0 = &DAT_001062b0;
+  std::string::_M_construct<char_const*>(&DAT_001062a0,"","");
+  __cxa_atexit(std::string::~string,&DAT_001062a0,&PTR_LOOP_00106008);
+  return;
+}
+
+
+
+void _INIT_1(void)
+
+{
+  DAT_001062c0 = &DAT_001062d0;
+  std::string::_M_construct<char_const*>(&DAT_001062c0,"inagalaxyfarfaraway");
+  __cxa_atexit(std::string::~string,&DAT_001062c0,&PTR_LOOP_00106008);
+  DAT_001062a0 = &DAT_001062b0;
+  std::string::_M_construct<char_const*>(&DAT_001062a0,"","");
+  __cxa_atexit(std::string::~string,&DAT_001062a0,&PTR_LOOP_00106008);
+  return;
+}
+
+
+
+void FUN_00103b1f(code *param_1,char *param_2,long param_3,long *param_4,undefined4 param_5)
+
+{
+  int iVar1;
+  int *piVar2;
+  long lVar3;
+  undefined8 uVar4;
+  long in_FS_OFFSET;
+  long local_48;
+  long local_40;
+  
+  local_40 = *(long *)(in_FS_OFFSET + 0x28);
+  piVar2 = __errno_location();
+  iVar1 = *piVar2;
+  *piVar2 = 0;
+                    // try { // try from 00103b6e to 00103bf9 has its CatchHandler @ 00103bfa
+  lVar3 = (*param_1)(param_3,&local_48,param_5);
+  if (local_48 == param_3) {
+    if (local_40 == *(long *)(in_FS_OFFSET + 0x28)) {
+      std::__throw_invalid_argument(param_2);
+    }
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+  if ((*piVar2 != 0x22) && (lVar3 + 0x80000000U >> 0x20 == 0)) {
+    if (param_4 != (long *)0x0) {
+      *param_4 = local_48 - param_3;
+    }
+    if (*piVar2 == 0) {
+      *piVar2 = iVar1;
+    }
+    if (local_40 == *(long *)(in_FS_OFFSET + 0x28)) {
+      return;
+    }
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+  if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+  uVar4 = std::__throw_out_of_range(param_2);
+                    // catch() { ... } // from try @ 00103b6e with catch @ 00103bfa
+  if (*piVar2 == 0) {
+    *piVar2 = iVar1;
+  }
+  if (local_40 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+                    // WARNING: Subroutine does not return
+  _Unwind_Resume(uVar4);
+}
+
+
+
+// void std::string::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)
+
+void std::string::_M_construct<char_const*>(ulong *param_1,undefined1 *param_2,long param_3)
+
+{
+  undefined1 *__dest;
+  ulong __n;
+  long in_FS_OFFSET;
+  ulong local_28;
+  long local_20;
+  
+  local_20 = *(long *)(in_FS_OFFSET + 0x28);
+  __n = param_3 - (long)param_2;
+  local_28 = __n;
+  if (__n < 0x10) {
+    __dest = (undefined1 *)*param_1;
+    if (__n == 1) {
+      *__dest = *param_2;
+      goto LAB_00103c6e;
+    }
+    if (__n == 0) goto LAB_00103c6e;
+  }
+  else {
+    __dest = (undefined1 *)std::string::_M_create(param_1,(ulong)&local_28);
+    *param_1 = (ulong)__dest;
+    param_1[2] = local_28;
+  }
+  memcpy(__dest,param_2,__n);
+LAB_00103c6e:
+  param_1[1] = local_28;
+  *(undefined1 *)(*param_1 + local_28) = 0;
+  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    // WARNING: Subroutine does not return
+    __stack_chk_fail();
+  }
+  return;
+}
+
+
+
+void _DT_FINI(void)
+
+{
+  return;
+}
+
+
+
