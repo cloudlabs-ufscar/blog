@@ -10,7 +10,7 @@ featured = true
   locale = "en"
 +++
 
-This past weekend, we participated in DamCTF 2025, organized by the Oregon State University Security Club. On this writeup, I want to focus on two rev challenges: 'Is it data or data?' and 'It's data, not data'. They're both related, you could say 'not data' is a sequel of 'or data?', introducing more complex logic.
+This past weekend (05/09-05/11), we participated in DamCTF 2025, organized by the Oregon State University Security Club. On this writeup, I want to focus on two rev challenges: 'Is it data or data?' and 'It's data, not data'. They're both related, you could say 'not data' is a sequel of 'or data?', introducing more complex logic.
 
 ## Is it data or data?
 'Is it data or data?' does not have a problem description, it simply gives you an executable. Running it, it seems to simply print a chevron ('>'), expecting some form of input. Depending on your input, the program either closes or continues running. Not much to go off of with only this, so let's dive into the code. For decompiling, I used Ghidra.
@@ -28,7 +28,7 @@ void _INIT_1(void)
   return;
 }
 ```
-Here, we see that two strings are initialized, one with the value "inagalaxyfarfaraway" in the variable DAT_001062c0, and another as an empty string in the variable DAT_001062a0.
+Here, we see that two strings are initialized, one with the value `"inagalaxyfarfaraway"` in the variable `DAT_001062c0`, and another as an empty string in the variable `DAT_001062a0`.
 
 Here's the decompiled main function:
 ```C
@@ -54,7 +54,7 @@ void FUN_00103a6a(void)
   return;
 }
 ```
-There is some redundant initialization at the bottom, we've already seen that in INIT_1. Let's focus on the do...while loop, the core of this program. The first function called is FUN_0010286e, and it's return value is saved on cVar1
+There is some redundant initialization at the bottom, we've already seen that in `INIT_1`. Let's focus on the do...while loop, the core of this program. The first function called is `FUN_0010286e`, and it's return value is saved on `cVar1`
 ```C
 undefined8 FUN_0010286e(void)
 {
@@ -80,10 +80,10 @@ undefined8 FUN_0010286e(void)
   return 0;
 }
 ```
-This function checks if DAT_00106280 is equal to 7, and if it is, it appends a 'g' (ASCII 0x67) to DAT_001062a0. Well, we remember DAT_001062a0 is the empty string that was initialized earlier. Not only that, if we look at the main function, we see that DAT_00106280 is incremented by one in every loop iteration. Easy to infer that DAT_00106280 is a 'turn' or 'round' counter in this program. When we get to the seventh round, a g is appended to the empty string. This already tells us a lot! We're most likely building a string on DAT_001062a0, one turn at a time, with the most probable goal being to build 
-"inagalaxyfarfaraway".
+This function checks if `DAT_00106280` is equal to 7, and if it is, it appends a 'g' (ASCII 0x67) to `DAT_001062a0`. Well, we remember `DAT_001062a0` is the empty string that was initialized earlier. Not only that, if we look at the main function, we see that `DAT_00106280` is incremented by one in every loop iteration. Easy to infer that `DAT_00106280`is a 'turn' or 'round' counter in this program. When we get to the seventh round, a g is appended to the empty string. This already tells us a lot! We're most likely building a string on `DAT_001062a0`, one turn at a time, with the most probable goal being to build 
+`"inagalaxyfarfaraway"`.
 
-If DAT_00106280 is not equal to 7, the function returns 0, and in those cases FUN_00102f95 is called next by main. This is a big one, I'll cut off the variable declarations and focus on the most important part:
+If `DAT_00106280` is not equal to 7, the function returns 0, and in those cases `FUN_00102f95` is called next by main. This is a big one, I'll cut off the variable declarations and focus on the most important part:
 ```C
 iVar3 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
       if (iVar3 == 1) {
@@ -171,8 +171,8 @@ iVar3 = FUN_00103b1f(__isoc23_strtol,&DAT_00104045,local_228,0,10);
         }
       }
 ```
-A lot to unpack here. This is the core of the program, with a whole bunch of if-else checks. It's important to know FUN_00103b1f is a simple srttol wrapper created by the decompiler, and it is called to turn the user's input of the current turn into an integer. Let's refer to the user's inputs as 'commands', here we can see a plethora of possible commands that we can use per turn. The grand majority of commands consist of only an integer, the exception being the command '1' which accepts extra arguments. This isn't necessary for solving the problem, so I wont't dive into it.
-Let's look at the first 'else', that executes a function for the command '11' (0x0b). The function called is FUN_00102bb1
+A lot to unpack here. This is the core of the program, with a whole bunch of if-else checks. It's important to know `FUN_00103b1f` is a simple srttol wrapper created by the decompiler, and it is called to turn the user's input of the current turn into an integer. Let's refer to the user's inputs as 'commands', here we can see a plethora of possible commands that we can use per turn. The grand majority of commands consist of only an integer, the exception being the command '1' which accepts extra arguments. This isn't necessary for solving the problem, so I wont't dive into it.
+Let's look at the first 'else', that executes a function for the command '11' (0x0b). The function called is `FUN_00102bb1`
 ```C
 void FUN_00102bb1(void)
 {
@@ -182,7 +182,7 @@ void FUN_00102bb1(void)
   return;
 }
 ```
-Don't forget DAT_001062a0 is the string that was initialized as empty! We already saw a case in which it is modified, appending a g to the end of it when we reach the seventh turn. This function modifies it by replacing the last character of it with a t (ASCII 0x74). Well, we're definitely finding a pattern here. Let's look at another case, FUN_00102bd1, which is called for the command '4'
+Don't forget `DAT_001062a0` is the string that was initialized as empty! We already saw a case in which it is modified, appending a g to the end of it when we reach the seventh turn. This function modifies it by replacing the last character of it with a t (ASCII 0x74). Well, we're definitely finding a pattern here. Let's look at another case, `FUN_00102bd1`, which is called for the command '4'
 ```C
 void FUN_00102bd1(void)
 {
@@ -205,7 +205,7 @@ void FUN_00102bd1(void)
   return;
 }
 ````
-Again, this function modifies DAT_001062a0, this time by appending an f (ASCII 0x66) to the end of it. This closes the case, we're definitely building a string, one character at a time, based on individual commands per turn. Here is my mapping of all the commands and the functions they call:
+Again, this function modifies `DAT_001062a0`, this time by appending an f (ASCII 0x66) to the end of it. This closes the case, we're definitely building a string, one character at a time, based on individual commands per turn. Here is my mapping of all the commands and the functions they call:
 ```
 4 FUN_00102bd1: append 'f' to the string.
 
@@ -225,7 +225,7 @@ Again, this function modifies DAT_001062a0, this time by appending an f (ASCII 0
 
 15 (0xf) FUN_001029a2: append 'r' to the string.
 ```
-We've made some fair assumptions about why we're building this string, but now it's time to confirm it by analyzing the last function called on the main's loop: FUN_00102cd1
+We've made some fair assumptions about why we're building this string, but now it's time to confirm it by analyzing the last function called on the main's loop: `FUN_00102cd1`
 ```C
 undefined8 FUN_00102cd1(void)
 {
@@ -241,7 +241,7 @@ undefined8 FUN_00102cd1(void)
   return uVar2;
 }
 ```
-This function checks if DAT_001062a8 (the string we're building) and DAT_001062c8 ('inagalaxyfarfaraway') are equal. If they aren't, it returns 0. If they are, it returns 1 (in a very odd way). When it returns 1, the loop ends. This closes the game, our objective is definitely to build 'inagalaxyfarfaraway' using the commands available. When we close the loop, FUN_00102d16 is called. There's a lot of decompiled gibberish here, but amidst it, we see a light in the end of the tunnel!
+This function checks if `DAT_001062a8` (the string we're building) and `DAT_001062c8` (`'inagalaxyfarfaraway'`) are equal. If they aren't, it returns 0. If they are, it returns 1 (in a very odd way). When it returns 1, the loop ends. This closes the game, our objective is definitely to build `'inagalaxyfarfaraway'` using the commands available. When we close the loop, `FUN_00102d16` is called. There's a lot of decompiled gibberish here, but amidst it, we see a light in the end of the tunnel!
 ```C
 void FUN_00102d16(void)
 {
@@ -284,7 +284,7 @@ Finally, we totally understand what this program does. In fact, it's a game! A g
 9 -- (inagalaxyfarfarawaz)
 5 -- (inagalaxyfarfaraway)
 ```
-Using this order of commands, I built a simple sover:
+Using this order of commands, I built a simple solver:
 ```python
 from pwn import *
 
@@ -307,7 +307,7 @@ log.success(f"\n{final_output}")
 
 io.close()
 ```
-Running this, we finally get the flag: dam{I_dont_like_silicon_it_makes_cpus_and_theyre_everywhere}
+Running this, we finally get the flag: `dam{I_dont_like_silicon_it_makes_cpus_and_theyre_everywhere}`
 
 ## It's data, not data
 This is merely a more complex version of the game we played in the first challenge. Let's look at the main function:
@@ -339,7 +339,7 @@ void main(void)
   return;
 }
 ```
-There are a few important differences. FUN_001032b8 is the first function called, and it initializes the string based on the very first input. This time around, the string doesn't start out empty, instead it is generated based on a number the user inputs as the very first command. This number serves as a seed. Well, no problem, we must simply manipulate this randomly generated string instead of an empty string.
+There are a few important differences. `FUN_001032b8` is the first function called, and it initializes the string based on the very first input. This time around, the string doesn't start out empty, instead it is generated based on a number the user inputs as the very first command. This number serves as a seed. Well, no problem, we must simply manipulate this randomly generated string instead of an empty string.
 Inside the loop, we see some more function call as well, but they're here for the convenience of the player. They print data on screen during each turn. Now, we have a nice status screen that shows both our current string and the target string, as well as where the pointer is located on our string. Handy!
 Example of string generated with seed '3' and game screen:
 ```
@@ -348,7 +348,7 @@ Move Number: 1 of 100
 Target : episode3,57min34sec
 Current: e'io<,QVtJu",n48%)J
 ```
-This time, we also have a move limit. However, it is very generous. The function that contains all our commands is now FUN_00103956. Here's my mapping of all the commands:
+This time, we also have a move limit. However, it is very generous. The function that contains all our commands is now `FUN_00103956`. Here's my mapping of all the commands:
 ```
 FUN_00102e75 - 1 value: 
     Sets the character DAT_001072a0[9] to char(value)
@@ -399,7 +399,7 @@ FUN_00102e17 57 (0x39):
     Sets DAT_001072a0[9] to W (ascii 87)
     Resets counters for commands 2 & 3
 ```
-Nice, now it's time to play... right? Well, there's a problem: at first sight, it seems we can really only modify the characters in the positions 7, 8, 9 and 11. Well, that complicates things. That got us stuck for a bit, for a while we thought the solution was to go through a bunch of seeds looking for a seed that started with every character already correct except for 8, 9 and 11. This got us nowhere. So we were stumped, we can't move the pointer at all? This makes the game impossible!\
+Nice, now it's time to play... right? Well, there's a problem: at first sight, it seems we can really only modify the characters in the positions 7, 8, 9 and 11. Well, that complicates things. This got us stuck for a bit, for a while we thought the solution was to go through a bunch of seeds looking for a seed that started with every character already correct except for 8, 9 and 11. This got us nowhere. So we were stumped, we can't move the pointer at all? This makes the game impossible!\
 Well, let's look at *all* the functions in the decomp. There must be something we are missing!
 Of course there was, we found these two functions in the code:
 ```C
@@ -424,7 +424,7 @@ undefined8 FUN_00102db7(void)
   return 0;
 }
 ```
-That can move the pointer left and right. However, it seemed as if they were unreachable, as they weren't explicity called anywhere. This was the missing piece that stumped a lot of players, and it was a smart trick placed by the challenge developers using an exception handler. And it seems like most decompilers are fooled by this, leaving these function calls mostly obfuscated. During the challenge, we actually just figured this out by guessing, and eventually we found out that these functions are called by the commands 'l' and 'r'. Being able to move the pointer makes this easy, it's just a matter of playing the game and building the desired string.\
+They can move the pointer left and right. However, it seemed as if they were unreachable, as they weren't explicity called anywhere. This was the missing piece that stumped a lot of players, and it was a smart trick placed by the challenge developers using an exception handler. And it seems like most decompilers are fooled by this, leaving these function calls mostly obfuscated. During the challenge, we actually just figured this out by guessing, and eventually we found out that these functions are called by the commands 'l' and 'r'. Being able to move the pointer makes this easy, it's just a matter of playing the game and building the desired string.\
 Before we show the solution, let's dive a little deeper into these obfuscated function calls. Here is the original code, provided by the devs after the CTF ended:
 ```C
 std::string input_full, input_word, func = "0", args ="0", func_pass;
@@ -452,6 +452,10 @@ std::string input_full, input_word, func = "0", args ="0", func_pass;
 ```
 TODO: complete this explanation
 
-I won't show the entire solution here,
+I won't show the entire solution sequence we used here, you can check out the logs at our [github repo](https://github.com/cloudlabs-ufscar/blog/blob/main/content/sec/dam-ctf-2025-data/its_data_not_data/solution.txt), as well as all the other files for the challenges and the ones we used for solving them. In the end, after playing the game, we got the flag `dam{git_branch_origin._you_are_a_pulled_one}`.
+
+----- 
+For now, we're done. Thanks for reading! If you ever need to deploy cloud-based infrastructure in Brazil, please consider our great partner [Magalu Cloud](https://magalu.cloud).
+
 
 
