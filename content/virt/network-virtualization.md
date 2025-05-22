@@ -9,9 +9,12 @@ categories = []
 featured = true
 +++
 
-## O que é virtualização
 A virtualização é a tecnologia que permite rodar múltiplos sistemas operacionais ou aplicações em um único hardware, criando versões virtuais de servidores, redes ou armazenamento. Isso otimiza recursos, reduz custos e é a base da computação em nuvem.
+
+<!--more-->
+
 ## Linha do tempo de tecnologias de virtualização
+
 - **2002** - Surgimento do VMware Workstation, solução proprietária que popularizou a virtualização de sistemas, inspirando futuros projetos open source.
 - **2005** - Lançamento do Virtuozzo (posteriormente OpenVZ), pioneiro em virtualização via containers Linux, introduzindo isolamento de recursos em nível de sistema operacional.
 - **2006–2007** - Integração do KVM (Kernel-based Virtual Machine) ao kernel Linux, estabelecendo-se como hypervisor tipo 1 open source para criação de máquinas virtuais de alto desempenho.
@@ -25,6 +28,7 @@ A virtualização é a tecnologia que permite rodar múltiplos sistemas operacio
 - **2023** - Consolidação de tecnologias como KVM e OpenStack após a aquisição da VMware pela Broadcom, com foco em SDN, automação via IaC e edge computing.
 
 ## Maquinas virtuais e containeres
+
 | Característica             | **Máquinas Virtuais (VMs)**                          | **Contêineres**                                                              |
 | -------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------- |
 | **Isolamento**             | Cada VM tem seu próprio sistema operacional completo | Compartilham o mesmo kernel do host, isolando apenas processos e bibliotecas |
@@ -41,6 +45,7 @@ Uma **interface física de rede** é um hardware, como uma placa de rede (NIC), 
 
 
 ## Interfaces de rede virtuais
+
 Uma **interface virtual de rede** é uma interface criada por software que simula uma conexão de rede sem a necessidade de hardware físico. Ela é usada para comunicação entre máquinas virtuais, contêineres ou diferentes processos dentro de um sistema. 
 Exemplos incluem **veth (Virtual Ethernet)** para comunicação entre namespaces no Linux, **bridge interfaces** para conectar VMs a redes físicas, e **tun/tap interfaces**, que criam conexões de rede tuneladas. 
 

@@ -9,7 +9,6 @@ categories = []
 featured = true
 +++
 
-# Introdução
 O Epic Leet Team jogou o LA-CTF que ocorreu no final de semana do dia 08 até 09 de fevereiro.  Os challenges de pwning foram resolvidos pelo professor orientador da frente de red team do projeto (com ocasionais ajudas de outros membros), e eu (Vini) embora com menos experiência, acompanhei a resolução dos desafios. Os challenges de crypto foram resolvidos pelo professor orientador, membros do ELT e a Laura, que no primeiro CTF dela resolveu um desafio e acompanhou as outras resoluções.
 
 # PWN
