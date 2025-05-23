@@ -213,7 +213,7 @@ The solution we will now discuss was a collaboration with Bruno, the Relentless 
 
 ![The (Relentless) Crypto Mage](./photos/IMG_5008.jpg)
 
-As usual, since [ctf](./dialects/ctf) is a static binary, we start by trying to create and load adequate FLIRT signatures. The binary contains the following strings which give hints about the compiler and linked libs:
+As usual, since [ctf](./dialects/ctf) is a static binary, we started by trying to create and load adequate FLIRT signatures. The binary contains the following strings which give hints about the compiler and linked libs:
 
 ```text
 OpenSSL 3.6.0-dev
@@ -221,11 +221,11 @@ compiler: /opt/cross/bin/x86_64-linux-musl-gcc -pthread -m64 -Os -msse4 -Wa,--no
 GCC: (GNU) 9.4.0
 ```
 
-After some web search, we find [a toolchain builder for musl](https://github.com/richfelker/musl-cross-make/tree/6f3701d08137496d5aac479e3a3977b5ae993c1f) which uses the same GCC version. Unfortunately, there are no prebuilt binary packages, so we build it.
+After some web search, we found [a toolchain builder for musl](https://github.com/richfelker/musl-cross-make/tree/6f3701d08137496d5aac479e3a3977b5ae993c1f) which uses the same GCC version. Unfortunately, there are no prebuilt binary packages, so we built it.
 
-The OpenSSL version is 3.6.0-dev, therefore our best guess is to build the [latest revision from their git](https://github.com/openssl/openssl/tree/172076029c0bbb188e321f5832f6a15971834e90) at the time of the CTF. 
+The OpenSSL version is 3.6.0-dev, therefore our best guess was to build the [latest revision from their git](https://github.com/openssl/openssl/tree/172076029c0bbb188e321f5832f6a15971834e90) at the time of the CTF.
 
-After some trial and error, we arrive at the following configure options which produce a lib with almost the same `compiler` string as we observed in the binary: `./Configure --cross-compile-prefix=x86_64-linux-musl- -no-shared -enable-sm4 -enable-sm2 -enable-sm3 -enable-weak-ssl-ciphers -enable-hw -no-pic`. Manually replacing `-Wall -O3` with `-Wall -O3 --static` and `-pthread -m64` with `-pthread -m64 -Os -msse4` in `configdata.pm` gave the final touch.
+After some trial and error, we arrived at the following configure options which produced a lib with almost the same `compiler` string as we observed in the binary: `./Configure --cross-compile-prefix=x86_64-linux-musl- -no-shared -enable-sm4 -enable-sm2 -enable-sm3 -enable-weak-ssl-ciphers -enable-hw -no-pic`. Manually replacing `-Wall -O3` with `-Wall -O3 --static` and `-pthread -m64` with `-pthread -m64 -Os -msse4` in `configdata.pm` gave the final touch.
 
 Unfortunately, that effort did not pay much. FLIRT signatures generated from musl's `libc.a` matched well with the binary, but the ones from `libssl.a` did not. Curiously, signatures generated from `libcrypto.a` (also built from OpenSSL sources) did match well, but they did not help much with the analysis.
 
@@ -373,7 +373,7 @@ Functions `EVP_sm4_ctr` and `EVP_sm3` above were a little tricky to identify. By
 .rodata:000000000072DBA0                         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0>
 ```
 
-The first attribute of each struct is called `nid`. Looking for their values (converted to decimal) in OpenSSL source code, we identified 1139 as [NID_sm4_ctr](https://github.com/openssl/openssl/blob/a0d1af6574ae6a0e3872d20ff302a78793c05a85/include/openssl/obj_mac.h#L5399) and 1143 as [NID_sm3](https://github.com/openssl/openssl/blob/a0d1af6574ae6a0e3872d20ff302a78793c05a85/include/openssl/obj_mac.h#L1237).
+The first attribute of each struct is called `nid`. Looking for their values (converted to decimal) in OpenSSL source code, we identified 1139 as [NID\_sm4\_ctr](https://github.com/openssl/openssl/blob/a0d1af6574ae6a0e3872d20ff302a78793c05a85/include/openssl/obj_mac.h#L5399) and 1143 as [NID\_sm3](https://github.com/openssl/openssl/blob/a0d1af6574ae6a0e3872d20ff302a78793c05a85/include/openssl/obj_mac.h#L1237).
 
 Looking at Wikipedia, we found [SM4](https://en.wikipedia.org/wiki/SM4_(cipher)) was indeed a block cipher, and [SM3](https://en.wikipedia.org/wiki/SM3_(hash_function)) was indeed a hash function. Both were published by the Chinese National Cryptography Administration.
 
@@ -389,7 +389,7 @@ Now we knew what to do:
 
 5. Send the name of the file we want to read (`./flag.txt`).
 
-However, things were not so simple. We compared some values produced by SM3 and SM4 from standard OpenSSL and values produced by the ctf binary, and realized they were different. Nautilus Institute changed the algorithms somehow.
+However, things were not so simple. We compared some values produced by standard SM3 and SM4 with values produced by the ctf binary, and realized they were different. Nautilus Institute changed the algorithms somehow.
 
 First idea was to visually compare the decompiled algorithms with OpenSSL source code. We immediately spot some differences:
 
@@ -478,7 +478,7 @@ Since SM4 was being used in CTR mode, it was easy to modify the provided binary 
 .text:00000000004003A1                 call    SSL_write
 ```
 
-The resulting binary is available as [ctf-patch](./dialects/ctf-patch), and it is called by [get_vals_patch.py](https://github.com/cloudlabs-ufscar/blog/blob/main/content/sec/defcon-quals-2025/dialects/get_vals_patch.py) to generate a keystream (by encrypting `b'\x00' * 0x100`).
+The resulting binary is available as [ctf-patch](./dialects/ctf-patch), and it is called by [get\_vals\_patch.py](https://github.com/cloudlabs-ufscar/blog/blob/main/content/sec/defcon-quals-2025/dialects/get_vals_patch.py) to generate a keystream (by encrypting `b'\x00' * 0x100`).
 
 A similar approach would be doable for SM3, but the patch would be more complex. Executing the process several times to carry out the brute force would result in too much overhead and would not conclude before the timeout. Therefore, we would need to insert the entire brute forcing loop inside the binary via patching.
 
@@ -537,3 +537,4 @@ Mine: 303030387f3030763030303008303030
 [*] Switching to interactive mode
 defcon{test_flag}
 ```
+
