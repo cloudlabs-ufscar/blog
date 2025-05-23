@@ -1,0 +1,5 @@
+/brute_hash
+/test
+/example.com.*
+*.o
+__pycache__
