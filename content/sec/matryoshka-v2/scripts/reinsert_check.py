@@ -1,0 +1,10 @@
+doll = open("Doll.dll", "r+b")
+check = open("CHECK.bin", "rb")
+patched_check = open("FIXED_JUMPCUT_CHECK.bin", "rb")
+offset = doll.read().find(check.read())
+doll.seek(offset)
+doll.write(patched_check.read())
+# 68,144,128
+doll.close()
+check.close()
+patched_check.close()
